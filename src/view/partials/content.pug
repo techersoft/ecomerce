@@ -37,16 +37,30 @@
         .on-sale-product.my-2
             .title
                 h4.product-title.m-0 sản phẩm đang giảm giá
-                .extentsion 
-                    span xem thêm sản phẩm 
-                        <i class="fas fa-chevron-right"></i>      
+                .extentsion.px-2 
+                    a(href="").mr-2 xem thêm sản phẩm 
+                    <i class="fas fa-chevron-right"></i>
+            .product-item-list.my-2.p-2
+            include ./sale-ticket.pug
         .hot-product.my-2
             .title
                 h4.product-title.m-0 sản phẩm bán chạy
+                .extentsion.px-2 
+                    a(href="").mr-2 xem thêm sản phẩm 
+                    <i class="fas fa-chevron-right"></i>
+            .product-item-list.my-2.p-2
         .collection-product
             .title
                 h4.product-title.m-0 sản phẩm mới
+                .extentsion.px-2 
+                    a(href="").mr-2 xem thêm sản phẩm 
+                    <i class="fas fa-chevron-right"></i>
+            .product-item-list.my-2.p-2
         .recent-product
             .title
                 h4.product-title.m-0 sản phẩm xem gần đây
+                .extentsion.px-2 
+                    a(href="").mr-2 xem thêm sản phẩm 
+                    <i class="fas fa-chevron-right"></i>
+            .product-item-list.my-2.p-2
         
