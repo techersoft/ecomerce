@@ -1,0 +1,10 @@
+//duc-start
+.btn-sending {
+    background-color: #fff;
+    transition:  background-color 0.3s ease-in-out;
+    &:hover {
+        color: #fff;
+        background-color: #282a2b;
+    }
+}
+//duc-end
