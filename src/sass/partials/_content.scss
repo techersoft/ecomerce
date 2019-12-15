@@ -1,0 +1,102 @@
+.product-content {
+    .banner-list {
+        .logo-banner {
+            img {
+                width: 100%;
+                max-height: 300px;
+            }
+        }
+    }
+    .product-category {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        .category-item {
+            margin: 5px;
+            min-width: 100px;
+            flex-wrap: wrap;
+            text-decoration: none;
+            text-align: center;
+            transition: box-shadow 0.5s ease-in-out;
+            img {
+                width: 70px;
+            }
+            p {
+                font-size: 12px;
+                margin: 0;
+                text-align: center;
+            }
+            &:hover {
+                -webkit-box-shadow: 0px 0px 5px 2px rgba(168,158,168,1);
+                -moz-box-shadow: 0px 0px 5px 2px rgba(168,158,168,1);
+                box-shadow: 0px 0px 5px 2px rgba(168,158,168,1);
+            }
+        }
+    
+    }
+    .on-sale-product {
+        .title {
+            display: flex;
+            align-items: center;
+            .product-title {
+                flex: 1;
+            }
+            .extentsion {
+                position: relative;
+                a {
+                    color: #424548;
+                    text-decoration: none !important;
+                }
+                ::after {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    left: 50%;
+                    bottom: 0;
+                    background-color: black;
+                    transition: all .5s ease;
+                }
+                &>:hover::after{
+                    width: 100%;
+                    transition: all .5s ease;
+                    left: 0;
+                }
+                
+            }
+        }
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        .product-title {
+            flex: 1;
+        }
+        .extentsion {
+            position: relative;
+            a {
+                color: #424548;
+                text-decoration: none !important;
+            }
+            ::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 1px;
+                left: 50%;
+                bottom: 0;
+                background-color: black;
+                transition: all .5s ease;
+            }
+            &>:hover::after{
+                width: 100%;
+                transition: all .5s ease;
+                left: 0;
+            }
+            
+        }
+    }
+    .product-item-list {
+        background-color: #f1f7f7;
+    }
+}

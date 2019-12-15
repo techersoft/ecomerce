@@ -1,0 +1,35 @@
+.container
+    .header-content
+        .row
+            .col-2
+                .logo
+                    a(href="#")
+                        img(src="https://st.hzcdn.com/res/4125/pic/houzz_logo.svg?v=4125", alt="")
+            .col-10
+                .row
+                    .col-md-6#search-box
+                        .row.mx-0
+                            .col-10
+                                .search
+                                    input.input-search(type="text")
+                                    button.btn-search
+                                        i.fas.fa-search
+                            .col-2.d-flex.justify-content-center
+                                button#btn-hide-search(onclick='showSearch()')
+                                    <i class="fas fa-times"></i>
+                    .col-md-6
+                        ul.header-right
+                            button#btn-show-search.btn-show-search(onclick='hideSearch()')
+                                i.fas.fa-search
+                            li.like
+                                a(href="#")
+                                    <i class="fas fa-heart"></i>
+                                    span Yêu thích (0)
+                            li.shopping-card
+                                a(href="#")
+                                    <i class="fas fa-cart-plus"></i>
+                                    span.text-shopping 0
+                            li.sign-in
+                                a(href="#")
+                                    i.fas.fa-user 
+                                    span Đăng nhập

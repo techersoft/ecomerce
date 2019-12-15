@@ -12,6 +12,14 @@
             left: 25%;
             width: 50%;
             position: absolute;
+            .title {
+                width: 100%;
+                text-align: center;
+            }
+            .input-bar{
+                display: flex;
+                padding: 0 10px;
+            }
         }
     }
     .contact {

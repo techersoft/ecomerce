@@ -4,3 +4,119 @@
 .form-search{
     max-width: 300px;
 }
+
+#header{
+    .header-content{
+        padding: 10px 0;
+    }
+    .header-right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 4px 0;
+        margin-bottom: 0 !important;
+        li{
+            list-style: none;
+            margin-left: 15px;
+            a{
+                color: #333;
+                span{
+                    margin-left: 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .logo{
+        img{
+            display: block;
+            width: 100px;
+        }
+    }
+    .search{
+        position: relative;
+        width: 100%;
+        .input-search{
+            width: 100%;
+            padding: 3px 45px 3px 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .btn-search{
+            position: absolute;
+            height: 100%;
+            width: 40px;
+            right: 0;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+    }
+    .shopping-card{
+        position: relative;
+        .text-shopping{
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            z-index: 11;
+            margin-left: 0;
+            background: #aaa;
+            text-align: center;
+            color: white;
+            width: 16px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            line-height: 16px;
+            height: 15px;
+            font-size: 12px;
+        }
+    }
+}
+.btn-show-search{
+    display: none;
+    width: 40px;
+    border: none;
+    background: none;
+    height: 100%;
+}
+#btn-hide-search{
+    display: none;
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 21px;
+    outline: none;
+}
+.show{
+    display: block !important;
+}
+@media(max-width: 768px){
+    .btn-show-search,
+    #btn-hide-search{
+        display: block;
+    }
+    #search-box{
+        display: none;
+        position: fixed;
+        background: #fff;
+        z-index: 123;
+        width: 100vw;
+        top: 0;
+        padding: 10px;
+        left: 0;
+        box-shadow: 0 0 5px 1px #ccc;
+    }
+    .like{
+        margin-left: 0 !important;
+    }
+}
+
+@media(max-width: 576px){
+    .like{
+        display: none;
+    }
+    .shopping-card{
+        margin-left: 0 !important;
+    }
+}
