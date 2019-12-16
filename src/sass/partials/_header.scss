@@ -4,11 +4,10 @@
 .form-search{
     max-width: 300px;
 }
-
+.wrapper-header{
+    padding: 10px 65px;
+}
 #header{
-    .header-content{
-        padding: 10px 0;
-    }
     .header-right{
         display: flex;
         justify-content: flex-end;
