@@ -141,6 +141,11 @@
 	position: relative;
     display: flex;
     justify-content: center;
+    transition: all .3s ease;
+    &:hover{
+        transform: scale(1.1);
+        transition: all .3s ease;
+    }
 }
 .icon-op-menu{
 	width: 30px;
@@ -200,7 +205,16 @@
 
 }
 @media only screen and (max-width:767px){
+    .wrapper-sub-menu{
+        padding: 0 15px;
+        .wrapper-logo{
+            padding-left: 65px;
+        }
+    }
     .side-bar{
+        position: absolute;
+        background: transparent;
         border: 0;
+        height: auto;
     }
 }
