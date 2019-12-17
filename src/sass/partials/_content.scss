@@ -103,3 +103,8 @@
         background-color: #f1f7f7;
     }
 }
+@media only screen and (max-width:767px){
+    .wrapper-content{
+        padding: 0 15px !important;
+    }
+}

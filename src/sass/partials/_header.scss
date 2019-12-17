@@ -110,12 +110,22 @@
         margin-left: 0 !important;
     }
 }
-
+.icon-menu_mobile{
+    display: none;
+}
 @media(max-width: 576px){
     .like{
         display: none;
     }
     .shopping-card{
         margin-left: 0 !important;
+    }
+}
+@media only screen and (max-width: 767px){
+    .wrapper-header{
+        padding-right: 15px;
+    }
+    .icon-menu_mobile{
+        display: block;
     }
 }
