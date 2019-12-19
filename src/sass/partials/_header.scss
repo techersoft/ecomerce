@@ -114,6 +114,15 @@
 .icon-menu_mobile{
     display: none;
 }
+.fixed-header{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 4px 0 #c5c3c3;
+    transition: all .3s ease;
+    z-index: 7;
+}
+
 @media(max-width: 576px){
     .like{
         display: none;
