@@ -1,11 +1,11 @@
-.container
+.container-fluid.wrapper-header
     .header-content
-        .row
-            .col-2
-                .logo
+        .row.align-items-center
+            .col-md-2.col-2
+                .logo#logo-header
                     a(href="#")
                         img(src="https://st.hzcdn.com/res/4125/pic/houzz_logo.svg?v=4125", alt="")
-            .col-10
+            .col-md-10.col-9
                 .row
                     .col-md-6#search-box
                         .row.mx-0
@@ -33,3 +33,6 @@
                                 a(href="#")
                                     i.fas.fa-user 
                                     span Đăng nhập
+            .col-1.icon-menu_mobile
+                button.btn-menu_mobile
+                    <i class="fas fa-stream"></i>

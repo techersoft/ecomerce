@@ -4,11 +4,10 @@
 .form-search{
     max-width: 300px;
 }
-
+.wrapper-header{
+    padding: 10px 65px;
+}
 #header{
-    .header-content{
-        padding: 10px 0;
-    }
     .header-right{
         display: flex;
         justify-content: flex-end;
@@ -28,6 +27,7 @@
         }
     }
     .logo{
+        margin: 0;
         img{
             display: block;
             width: 100px;
@@ -111,6 +111,17 @@
         margin-left: 0 !important;
     }
 }
+.icon-menu_mobile{
+    display: none;
+}
+.fixed-header{
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 4px 0 #c5c3c3;
+    transition: all .3s ease;
+    z-index: 7;
+}
 
 @media(max-width: 576px){
     .like{
@@ -118,5 +129,13 @@
     }
     .shopping-card{
         margin-left: 0 !important;
+    }
+}
+@media only screen and (max-width: 767px){
+    .wrapper-header{
+        padding-right: 15px;
+    }
+    .icon-menu_mobile{
+        display: block;
     }
 }

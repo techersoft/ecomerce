@@ -23,11 +23,16 @@ $(document).ready(function(){
     })
     $('.op-menu').click(function(){
         $(".nav-box").find('.menu-accordion__sub-items').slideUp('fast');
-        $(this).toggleClass('clo-menu');
         if($('.wrapper-sub-menu').hasClass('show-sub-menu') == false){
             $('.wrapper-sub-menu').addClass('show-sub-menu');
+            $(".bg-wrapper").addClass('show-bg-wrapper');
+            $("body").css('overflow','hidden');
+            $(this).addClass('clo-menu');
         }else{
             $('.wrapper-sub-menu').removeClass('show-sub-menu');
+            $(".bg-wrapper").removeClass('show-bg-wrapper');
+            $("body").css('overflow','auto');
+            $(this).removeClass('clo-menu');
         }
 	})
 });
