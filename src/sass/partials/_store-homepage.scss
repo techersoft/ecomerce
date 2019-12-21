@@ -1,0 +1,96 @@
+.homepage-container{
+    .cus-background {
+        background-color: #eaeaea;
+    }
+    .hot-product-containe{
+        .sale-advertisment{
+            .sale-product{
+                .content {
+                    position: relative;    
+                    img {
+                        width: 100%;
+                    }
+                    .detail-product {
+                    
+                        text-transform: uppercase;
+                        position: absolute;
+                        padding: 5px;
+                        bottom: 5%;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        .price {
+                            color: white;
+                            background-color: #54a0e2;
+                            background-color: rgba(0,0,0, 0.4);
+                            .old-price {
+                                text-decoration: line-through;
+                            }
+                            .new-price {
+                                color: #f31063;
+                            }
+                        }
+                        .product-name {
+                            color: white;
+                        }
+                    }
+                    .sale-off {
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 25px;
+                        font-weight: bold;
+                        width: 20%;
+                        height: 20%;
+                        border-radius: 50%;
+                        background-color: #ff2b53;
+                        top: 5%;
+                        right: 5%;
+                    }    
+                }
+            }
+        }
+        .hot-product {
+            display: flex;
+            flex-direction: column;
+            .top-hot {
+                flex: 1;
+                margin-bottom: 30px !important;
+                .product-detail {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                }
+            }
+            .bottom-hot {
+                flex: 1;
+                .product {
+                    .product-price {
+                        color: darkorange;
+                        text-align: center;
+                    }
+                }
+            }
+            .product-img {
+                img {
+                    width: 100%;
+                }
+            }
+            .product-name {
+                font-size: 20px;
+                font-weight: bold;
+                text-align: right;
+            }
+            .product-price {
+                color: darkorange;
+                text-align: right;
+            }
+        }
+    }
+}
+    
+        
+          
