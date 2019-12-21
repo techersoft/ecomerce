@@ -45,17 +45,31 @@
                     .content-info {
                         font-size: 12px;
                     }
+                    .preservation{
+                        
+                        .preservation-info {
+                            font-size: 12px;
+                        }
+                        &:before {
+                            content: "\f14a";
+                            display: inline-block;
+                            font-family: "Font Awesome 5 Free";
+                            margin-left: -1.3em;
+                            width: 1.3em;
+                        }
+                    }
                 }
                 .table-infor {
                     border-top: 1px black dashed;
                     .title {
-                        background-color: darkgray;
+                        background-color: #dcdcdc;
                         font-size: 12px;
                     }
                     .infor {
                         font-size: 12px;
                     }
                 }
+                
             }
         }
     }
