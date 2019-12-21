@@ -6,10 +6,15 @@ block main-content
             include ./../partials/navigation.pug
         main#main-content
             .container-fluid.mt-3
-                .row.m-0
-                    .col-3.p-0
+                .wrapper-category.d-flex
+                    .wrapper-category_menu
                         include ./../partials/category-product-content.pug
-                    .col-9
-                        include ./../partials/list-product-category.pug
+                    .wrapper-category_product
+                        .product-list.px-3
+                            .product-list-title.d-flex.justify-content-between.align-items-center.mb-2
+                                h3 Sản phẩm mua nhiều
+                                a.read-more(href="#") Xem thêm 
+                                    i.fas.fa-chevron-right
+                            include ./../partials/list-product-category.pug
         section#footer
             include ./../partials/footer.pug
