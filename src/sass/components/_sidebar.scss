@@ -4,6 +4,7 @@
         font-weight: 700;
         text-transform: uppercase;
         font-size: 14px;
+        text-decoration: none;
     }
     .main-title{
         h3{
@@ -16,10 +17,29 @@
         }
     }
     .sidebar-menu{
-        width: 240px;
         border: 1px solid rgba(8,21,38,.15);
         .menu-item{
             padding: 3px 0;
+            span{
+                font-size: 12px;
+                margin-left: 5px;
+            }
+            .menu-icon-btn{
+                cursor: pointer;
+            }
+            .sub-menu-sidebar{
+                display: none;
+                li{
+                    padding-top: 10px;
+                    padding-left: 15px;
+                    a{
+                        font-size: 12px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                        color: #333;
+                    }
+                }
+            }
         }
         .sub-menu-content{
             padding: 10px 15px;
@@ -37,6 +57,9 @@
         }
         .main-content{
             padding: 10px 15px !important;
+            .filter-header{
+                cursor: pointer;
+            }
             .filter-content{
                 margin-top: 10px;
                 .search{
@@ -73,9 +96,13 @@
                 font-size: 14px;
             }
         }
-        a{
+        label{
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+        .text-underline{
             text-decoration: underline;
-            text-transform: lowercase;
+            text-transform: capitalize;
             font-weight: 400;
         }
         .price{
@@ -142,4 +169,75 @@
         color: #000;
         background-color: #fff;
     }
+}
+
+// animation
+.hover-bottom{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #000;
+        transition: all .3s ease;
+    }
+    &:hover::before{
+        width: 100%;
+        transition: all .3s ease;
+
+    }
+}
+
+
+// custom checkbox
+
+.filter-checkbox {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~ .checkmark {
+            background-color: #000;
+        }
+        &:checked ~ .checkmark::after {
+            display: block;
+        }
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 23px;
+        background-color: #eee;
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+    }
+    .checkmark::after {
+        content: '';
+        left: 9px;
+        top: 3px;
+        width: 7px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+    }
+}
+
+.rotate{
+    transform: rotate(90deg);
 }
