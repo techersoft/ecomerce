@@ -60,13 +60,142 @@
         .filter-menu.sidebar-menu.mt-3
             .main-title
                 h3 Bộ lọc
-            .main-content
+            .main-content.border-bottom
                 .filter-header.content-flex
                     span Thương hiệu
                     span.menu-icon
                         i.fas.fa-chevron-right
-                ul.filter-content
-                    li.search
+                .filter-content
+                    .search
                         button
                             <i class="fas fa-search"></i>
                         input(type="text" placeholder="tìm kiếm...")
+                    ul.checkbox
+                        li
+                            a(href="#")
+                                label.filter-checkbox
+                                    | JYSK
+                                    input(type='checkbox')
+                                    span.checkmark
+                        li
+                            a(href="#")
+                                label.filter-checkbox
+                                    | Fullhouse
+                                    input(type='checkbox')
+                                    span.checkmark
+                        li
+                            a(href="#")
+                                label.filter-checkbox
+                                    | Casanha
+                                    input(type='checkbox')
+                                    span.checkmark
+                        li
+                            a(href="#")
+                                label.filter-checkbox
+                                    | Fitis
+                                    input(type='checkbox')
+                                    span.checkmark
+                        li
+                            a(href="#")
+                                label.filter-checkbox
+                                    | PuzzleHome
+                                    input(type='checkbox')
+                                    span.checkmark
+                    a(href="#") Xem thêm
+            .main-content.border-bottom
+                .filter-header.content-flex
+                    span Phong cách
+                    span.menu-icon
+                        i.fas.fa-chevron-right
+                ul.checkbox
+                    li
+                        a(href="#")
+                            input(type='checkbox')
+                            span Phong Cách Scandinavian
+                    li
+                        a(href="#")
+                            input(type='checkbox')
+                            span Phong Cách Hiện Đại
+                    li
+                        a(href="#")
+                            input(type='checkbox')
+                            span Phong Cách Nhật Zen
+                    li
+                        a(href="#")
+                            input(type='checkbox')
+                            span Phong Cách Cổ Điển
+                    li
+                        a(href="#")
+                            input(type='checkbox')
+                            span Phong Cách Retro
+                a(href="#") Xem thêm
+            .main-content.border-bottom
+                .filter-header.content-flex
+                    span Giá (VND)
+                    span.menu-icon
+                        i.fas.fa-chevron-right
+                .price
+                    .control-price.content-flex
+                        input(type="text", value="0")
+                        span -
+                        input(type="text", value="200000000")
+                button.btn-apply.mt-2 Áp dụng
+            .main-content.border-bottom
+                .filter-header.content-flex
+                    span Màu sắc
+                    span.menu-icon
+                        i.fas.fa-chevron-right
+                .filter-color-wrapper
+                    .row
+                        .filter-color(style="background: rgb(244, 125, 14);")
+                        .filter-color(style="background: rgb(240, 51, 118);")
+                        .filter-color(style="background: rgb(255, 170, 207);")
+                        .filter-color(style="background: rgb(255, 234, 204);")
+                        .filter-color(style="background: rgb(255, 219, 156);")
+                        .filter-color(style="background: rgb(195, 145, 34);")
+                        .filter-color(style="background: rgb(195, 68, 51);")
+                        .filter-color(style="background: rgb(255, 217, 128);")
+                        .filter-color(style="background: rgb(158, 102, 5);")
+                        .filter-color(style="background: rgb(150, 124, 98);")
+                        .filter-color(style="background: rgb(141, 116, 217);")
+                        .filter-color(style="background: rgb(255, 255, 255);")
+                        .filter-color(style="background: rgb(226, 220, 220);")
+                        .filter-color(style="background: rgb(255, 246, 0);")
+                        .filter-color(style="background: rgb(205, 205, 200);")
+                        .filter-color(style="background: rgb(244, 25, 111);")
+                        .filter-color(style="background: rgb(24, 15, 14);")
+                        .filter-color(style="background: rgb(64, 125, 114);")
+                        .filter-color(style="background: rgb(244, 125, 114);")
+                        .filter-color(style="background: rgb(34, 115, 14);")
+                        .filter-color(style="background: rgb(54, 125, 14);")
+                        .filter-color(style="background: rgb(74, 125, 14);")
+                        .filter-color(style="background: rgb(94, 95, 14);")
+                        .filter-color(style="background: rgb(84, 25, 14);")
+                        .filter-color(style="background: rgb(244, 125, 14);")
+                        .filter-color(style="background: rgb(244, 25, 114);")
+                        .filter-color(style="background: rgb(144, 25, 14);")
+                        .filter-color(style="background: rgb(24, 125, 14);")
+            .main-content.border-bottom
+                .filter-header.content-flex
+                    span Chất liệu
+                    span.menu-icon
+                        i.fas.fa-chevron-right
+                .filter-material-wrapper.mt-3
+                    .row.mx-0
+                        .filter-material Bê tông
+                        .filter-material Cói
+                        .filter-material Cotton
+                        .filter-material Da
+                        .filter-material Da pu
+                        .filter-material Da thật
+                        .filter-material Kim loại
+                        .filter-material Gỗ công nghiệp
+                        .filter-material Gỗ tự nhiên
+                        .filter-material Thạch cao
+                        .filter-material Đá
+                        .filter-material Nhựa
+                        .filter-material Mây tre
+                        .filter-material Vãi
+                        .filter-material Vãi nhung
+                        .filter-material Vãi bố Linen
+                        .filter-material vỏ cây
