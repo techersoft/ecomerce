@@ -35,8 +35,11 @@ html(lang="en")
                 script(src="../js/header-search.js")
                 script(src="../js/banner.js")
                 script(src="../js/sub-menu.js")
-                script(src="../js/menu.js")
+<<<<<<< HEAD
                 script(src="../js/tab-product-info.js")
+=======
+                script(src="../js/menu.js")
+>>>>>>> 5e412db124198dc70037d20a1255c1f84dac7777
 
 
 
