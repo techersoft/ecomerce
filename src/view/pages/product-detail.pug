@@ -6,14 +6,13 @@ block main-content
             include ./../partials/navigation.pug
         main#main-content
             .container
-                //- .item-detail
-                //-     include ./../partials/tab-product-info.pug
-                //- .product-list.px-3
-                //-         .product-list-title.d-flex.justify-content-between.align-items-center.mb-2
-                //-             h3 Sản phẩm liên quan
-                //-             a.read-more(href="#") Xem thêm 
-                //-                 i.fas.fa-chevron-right
-                //-         include ./../partials/list-product-category.pug
-                include ./../partials/store-homepage.pug
+                .item-detail
+                    include ./../partials/tab-product-info.pug
+                .product-list.px-3
+                        .product-list-title.d-flex.justify-content-between.align-items-center.mb-2
+                            h3 Sản phẩm liên quan
+                            a.read-more(href="#") Xem thêm 
+                                i.fas.fa-chevron-right
+                        include ./../partials/list-product-category.pug
         section#footer
             include ./../partials/footer.pug
