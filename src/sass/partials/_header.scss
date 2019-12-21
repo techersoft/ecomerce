@@ -5,7 +5,7 @@
     max-width: 300px;
 }
 .wrapper-header{
-    padding: 10px 65px;
+    padding: 10px 15px 10px 65px;
 }
 #header{
     .header-right{
@@ -133,9 +133,10 @@
 }
 @media only screen and (max-width: 767px){
     .wrapper-header{
-        padding-right: 15px;
+        padding-right: 15px !important;
     }
     .icon-menu_mobile{
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 }

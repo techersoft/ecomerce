@@ -11,9 +11,9 @@
 .menu-accordion{
     .nav-box{
         cursor: pointer;
-        border-bottom: 1px dotted #999;
+        border-top: 1px solid #ccc;
         &:last-child{
-            border-bottom: none;
+            border-bottom: 1px solid #ccc;
         }
         &:hover{
             .menu-accordion__item{
@@ -97,6 +97,9 @@
     transition: all .6s ease;
     background: #fff;
     z-index: 15;
+    .wrapper-logo{
+        margin-left: 15px;
+    }
 }
 .sub-menu{
     overflow: auto;
@@ -104,7 +107,7 @@
 }
 .show-sub-menu{
     margin-left: 0;
-    transition: all .6s ease;
+    transition: all .3s ease;
 }
 .wrapper-logo{
     padding: 10px 0;
@@ -149,7 +152,7 @@
     }
 }
 .icon-op-menu{
-	width: 30px;
+	width: 27px;
 	height: 2px;
 	position: absolute;
 	border-radius: 4px;
@@ -167,12 +170,12 @@
 }
 .icon-op-menu:before{
 	content: "";
-	width: 30px;
+	width: 27px;
 	height: 2px;
 	position: absolute;
 	border-radius: 4px;
 	display: block;
-	top: -10px;
+	top: -7px;
 	background-color: #222;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
@@ -185,12 +188,12 @@
 }
 .icon-op-menu:after{
 	content: "";
-	width: 30px;
+	width: 27px;
 	height: 2px;
 	position: absolute;
 	border-radius: 4px;
 	display: block;
-	bottom: -10px;
+	bottom: -7px;
 	background-color: #222;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
@@ -207,9 +210,12 @@
 }
 @media only screen and (max-width:767px){
     .wrapper-sub-menu{
-        padding: 0 15px;
+        padding: 0px;
         .wrapper-logo{
             padding-left: 65px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            margin: 0;
         }
     }
     .side-bar{
@@ -217,5 +223,8 @@
         background: transparent;
         border: 0;
         height: auto;
+    }
+    .menu-accordion{
+        margin: 0 !important;
     }
 }
