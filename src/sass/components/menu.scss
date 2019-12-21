@@ -58,7 +58,7 @@
     width: 100%;
     background: #fff;
     border: 1px solid #eee;
-    z-index: 7;
+    z-index: 21;
     padding: 15px 0;
     box-shadow: 0 3px 3px 0 #bdbdbd;
     flex-wrap: wrap;
@@ -105,22 +105,21 @@
     width: 300px;
     border-left: 1px solid #d0cfcf;
     .wrapper-logo{
-        border-bottom: 1px solid #ccc;
         position: relative;
     }
     .box-item-nav_mobile{
+        border-top: 1px solid #ccc;
         .header-nav-menu{
             display: none;
         }
         cursor: pointer;
-        &:first-child{
-            border-top: 1px solid #ccc;
+        &:last-child{
+            border-bottom: 1px solid #ccc;
         }
     }
     .widget_title{
         align-items: center;
         padding: 5px 0;
-        border-bottom: 1px solid #ccc;
         a{
             color: #333;
         }

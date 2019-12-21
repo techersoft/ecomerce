@@ -6,7 +6,7 @@ $(document).ready(function(){
         if($(this).hasClass('selected') == false) {
             $(".nav-box.selected").removeClass('selected').find('.menu-accordion__sub-items').slideUp('swing');
             $(this).addClass('selected');
-            navsub.fadeIn('swing');
+            navsub.fadeIn('slow');
         } else {
             $(".nav-box.selected").removeClass('selected').find('.menu-accordion__sub-items').slideUp('swing');
         } 

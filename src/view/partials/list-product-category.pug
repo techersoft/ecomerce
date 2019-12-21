@@ -1,0 +1,70 @@
+mixin productItem
+    .product-item.my-3
+        .product-item-header
+            .product-item-badges
+                span.discount -20%
+                span.status.unlike.cursor-pointer
+                    i.fas.fa-heart
+            .product-item-image
+                img(src="https://s3.amazonaws.com/fairanb-v2-dev/default/product_image/inventoryaba457d7-09bd-40c4-96a2-a9f0df4141fbdownload.jpeg", alt="Product Image")     
+        .product-item-body.mt-1
+            .product-item-slider.owl-carousel
+                .thumbnail-item.active
+                    img(src="https://s3.amazonaws.com/fairanb-v2-dev/default/product_image/inventoryaba457d7-09bd-40c4-96a2-a9f0df4141fbdownload.jpeg", alt="Product Image")
+                .thumbnail-item
+                    img(src="https://fairanb-v2-dev.s3.amazonaws.com/default/product_image/1358_PRODUCTLG_1501260539717.jpg", alt="Product Image")
+                .thumbnail-item
+                    img(src="https://s3.amazonaws.com/fairanb-v2-dev/default/product_image/inventoryaba457d7-09bd-40c4-96a2-a9f0df4141fbdownload.jpeg", alt="Product Image")
+                .thumbnail-item
+                    img(src="https://fairanb-v2-dev.s3.amazonaws.com/default/product_image/1666_PRODUCTLG_1506856201220.jpg", alt="Product Image")
+            .product-item-info.px-3.pb-3.pt-2
+                a(href="#").cursor-pointer
+                    h3.product-info-title Ghế thư giãn Barcelona
+                .d-flex.justify-content-between.align-items-center.pt-3
+                    .product-stars-rating
+                        span.active
+                            i.fas.fa-star
+                        span.active
+                            i.fas.fa-star
+                        span.active
+                            i.fas.fa-star
+                        span
+                            i.fas.fa-star
+                        span
+                            i.fas.fa-star
+                        span.count-rating (30)
+                    .product-location Hồ Chí Minh    
+
+        .product-item-footer.d-flex.justify-content-between.align-items-center.px-3.py-1
+            .product-price
+                p.m-0.current-price 23,699,333 VND
+                p.m-0.old-price 40,340,999 VND
+
+            .product-provider
+                a(href="#")
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png", alt="")
+
+
+.product-list.px-3
+    .product-list-title.d-flex.justify-content-between.align-items-center.mb-2
+        h3 Sản phẩm mua nhiều
+        a.read-more(href="#") Xem thêm 
+            i.fas.fa-chevron-right
+    .product-list-slider
+        .row
+            .col-lg-4
+                +productItem
+            .col-lg-4
+                +productItem
+            .col-lg-4
+                +productItem
+            .col-lg-4    
+                +productItem
+            .col-lg-4    
+                +productItem
+            .col-lg-4    
+                +productItem
+            .col-lg-4    
+                +productItem
+
+
