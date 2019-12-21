@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    var productItem = $('.product-item-slider.owl-carousel');
-    var productList = $('.product-list-slider.owl-carousel');
+    var productItem = $('.product-item-slider');
+    var productList = $('.product-list-slider');
     $('.product-item').get().forEach(function (item) {
         let thumbnailItem = $(item).find(".thumbnail-item");
         let productItemImage = $(item).find('.product-item-image img')
