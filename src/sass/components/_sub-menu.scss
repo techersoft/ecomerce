@@ -11,10 +11,6 @@
 .menu-accordion{
     .nav-box{
         cursor: pointer;
-        border-top: 1px solid #ccc;
-        &:last-child{
-            border-bottom: 1px solid #ccc;
-        }
         &:hover{
             .menu-accordion__item{
                 h6{
@@ -205,17 +201,19 @@
 	-moz-transition: all .3s ease;
 	background-color: #222;
 }
-@media only screen and (max-width:1200px){
-
+@media only screen and (min-width:767px){
+    .wrapper-sub-menu{
+        min-width: 31.25rem;
+    }
 }
 @media only screen and (max-width:767px){
     .wrapper-sub-menu{
-        padding: 0px;
+        // padding: 0px;
         .wrapper-logo{
-            padding-left: 65px;
+            // padding-left: 65px;
             padding-top: 13px;
             padding-bottom: 13px;
-            margin: 0;
+            // margin: 0;
         }
     }
     .side-bar{
@@ -225,6 +223,6 @@
         height: auto;
     }
     .menu-accordion{
-        margin: 0 !important;
+        // margin: 0 !important;
     }
 }

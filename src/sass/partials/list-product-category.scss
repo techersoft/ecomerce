@@ -140,10 +140,11 @@
         border-bottom: 1px solid #ccc;
         h3 {
             padding: 13px 15px;
-            font-size: 16px;
-            color: #070404;
+            font-size: 20px;
+            color: #333;
             text-transform: uppercase;
             margin: 0;
+            font-weight: 600;
         }
         a.read-more {
             position: relative;
@@ -192,6 +193,9 @@
         }
     }
     
+}
+.wrapper-category_menu{
+    max-width: 240px;
 }
 .wrapper-category_product{
     width: calc(100% - 250px);

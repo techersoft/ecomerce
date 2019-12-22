@@ -28,7 +28,7 @@
     
     a{
         color: #333;
-        font-weight: 500;
+        font-weight: 600;
     }
     &:last-child{
         border: none;
@@ -257,5 +257,11 @@
     .menu-desktop{
         display: none;
         pointer-events: none;
+    }
+}
+@media only screen and (max-width:1200px){
+    .header-nav-menu_content{
+        width: calc(100% - 80px);
+        margin-left: 65px;
     }
 }
