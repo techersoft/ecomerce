@@ -72,12 +72,13 @@
                         left: 0;
                         top: 0;
                         height: 100%;
-                        width: 20px;
+                        width: 30px;
                     }
                     input{
                         width: 100%;
                         font-size: 14px;
-                        padding: 2px 5px 2px 20px;
+                        padding: 4px 5px 4px 30px;
+                        border: 1px solid rgba(8,21,38,.15) !important;
                     }
                 }
             }
@@ -109,7 +110,7 @@
             margin: 7px 0;
             input{
                 height: 36px;
-                border: 1px solid rgba(8,21,38,.15);
+                border: 1px solid rgba(8,21,38,.15) !important;
                 padding: 5px;
                 background-color: #fff;
                 width: 100%;
