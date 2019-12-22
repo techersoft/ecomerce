@@ -71,10 +71,8 @@ $(document).ready(function () {
 
   var fixMenu = $('#header').offset().top;
   var windowHeight = window.pageYOffset;
-  console.log(fixMenu, windowHeight);
   $(window).scroll(function () {
     var currentScrollWindow = window.pageYOffset;
-    console.log("2", currentScrollWindow);
 
     if (windowHeight > currentScrollWindow && fixMenu < $(window).scrollTop()) {
       $('#header').addClass('fixed-header');
@@ -83,6 +81,5 @@ $(document).ready(function () {
     }
 
     windowHeight = currentScrollWindow;
-    console.log(windowHeight, currentScrollWindow);
   });
 });
