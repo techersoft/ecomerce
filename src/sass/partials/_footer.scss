@@ -134,5 +134,10 @@
     font-weight: bold;
 }
 .wrapper-footer{
-    
+    margin-left: 50px;
+}
+@media only screen and (max-width:767px){
+    .wrapper-footer{
+        margin: 0;
+    }
 }
