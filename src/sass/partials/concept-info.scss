@@ -1,0 +1,101 @@
+.concept-layout{
+    display: flex;
+}
+.concept-info-area{
+    width: 420px;
+    background-color: #fff;
+    -webkit-transition: right .3s ease-out;
+    transition: right .3s ease-out;
+    border-left: 1px solid #e6e6e6;
+    height: 100vh;
+    a{
+        color: #333333;
+        text-decoration: none;
+        &:hover{
+            color: #3d8901;
+        }
+    }
+}
+.concept-img-area{
+    width: calc(100% - 420px);
+    min-height: 250px;
+    height: 100%;
+    -webkit-transition: width .25s ease-out,height .25s ease-out;
+    transition: width .25s ease-out,height .25s ease-out;
+}
+.concept-content-box{
+    border-bottom: 1px solid #e6e6e6;
+}
+.concept-content-space-owner{
+    display: flex;
+    align-items: center;
+}
+.concept-content-space-owner_info-avatar{
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.concept-content-space-owner_info{
+    
+}
+.space-owner_info-details_name{
+    line-height: 18px;
+}
+$stars: 5;
+$star-size: 18px;
+$star-on-color: #F9DF4A;
+$star-off-color: #CCCCCC;
+.space-owner_info-details_rating_icon{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    .checked{
+        color: rgb(255, 190, 40);
+    }
+}
+.space-info_title{
+    h2{
+        font-size: 18px;
+    }
+    .space-title__line{
+        display: block;
+    }
+    .space-title__line-sub{
+        font-size: 14px;
+        color: #888;
+    }
+}
+.space-facets_content{
+    display: flex;
+    li{
+        &:after{
+            padding: 0 7px 0 7px;
+            content: "|";
+            color: #8f8f8f;
+        }
+        &:last-child{
+            &:after{
+                content: '';
+            }
+        }
+        .more-icon{
+            &:before{
+                content: ">";
+                padding-left: 5px;
+            }
+        }
+    }
+}
+.project-photo_title{
+    h2{
+        font-size: 14px;
+    }
+}
+.text-green{
+    color: #2d9b00 !important;
+    &:hover,&:focus{
+        color: #268200 !important;
+    }
+}
