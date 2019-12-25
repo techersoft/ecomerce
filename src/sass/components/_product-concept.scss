@@ -1,0 +1,184 @@
+#product-concept{
+    position: fixed;
+    width: 990px;
+    height: 100%;
+    .product-concept{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        border: 1px solid;
+        .carousel-product{
+            max-height: calc(100vh - 150px);
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            padding: 10px 0;
+            overflow: hidden;
+            .product-concept-item{
+                position: relative;
+                img{
+                    width: 100%;
+                    display: block;
+                    min-width: 500px;
+                    min-height: 300px;
+                }
+            }
+            .btn-group-contacts{
+                position: absolute;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                bottom: 50px;
+                .btn{
+                    background-color: #fff !important;
+                    border-radius: 3px;
+                    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.35) !important;
+                    
+                }
+                .btn-email,
+                .btn-save{
+                    min-width: 90px;
+                    font-family: sans-serif;
+                    font-weight: 600;
+                }
+                .btn-show{
+                    position: absolute;
+                    right: 30px;
+                    width: 35px; 
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .more-product{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 150px;
+            left: 0;
+            border: 1px solid red;
+        }
+    }
+}
+.tag-item{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn 2s infinite;
+    i{
+        &::before{
+            color: #fff;
+            font-size: 23px;
+        }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(250,250,250,.3);
+        border-radius: 100%;
+        transition: all .3s ease;
+        animation: zoomIn 2s linear 2s infinite;
+        box-shadow: 0 3px 15px 5px rgba(255, 0, 0, 0.35) !important;
+    }
+}
+
+.nav-controls{
+    display: none;
+    position: absolute;
+    width: 150px;
+    background-color: #fff;
+    bottom: 50px;
+    right: 0;
+    padding: 10px;
+    li{
+        list-style: none;
+        padding: 5px;
+        text-align: left;
+        &:hover{
+            background-color: rgba(0,0,0,.1);
+        }
+        span{
+            color: #333;
+            font-weight: 600;
+        }
+        i{
+            margin-right: 10px;
+            &::before{
+                color: #333;
+            }
+        }
+        .color-green{
+            &::before{
+                color: #2d9b00;
+            }
+        }
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        border-width: 11px 8px 0 8px;
+        border-style: solid;
+        border-color: white transparent;
+        top: 100%;
+        right: 10px;
+    }
+}
+
+.color-default{
+    &::before{
+        color: #333 !important;
+    }
+}
+
+.item-1{
+    position: absolute;
+    top: 28%;
+    right: 24%;
+}
+.item-2{
+    position: absolute;
+    top: 49%;
+    right: 16%;
+}
+
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .item-1{
+        position: absolute;
+        top: 28%;
+        right: 23%;
+    }
+    .item-2{
+        position: absolute;
+        top: 49%;
+        right: 15%;
+    }
+    
+}
