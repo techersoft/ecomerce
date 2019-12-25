@@ -1,4 +1,62 @@
-.tab-product-info
+.product-info.container-fluid
+    .item-info.row.m-0.mt-2
+        .item-gallery.col-md-7
+            .owl-carousel.owl-theme.owl-carousel-image
+                .item.banner
+                    .img-banner
+                        img(src="https://cdn.fitin.vn/cms-ecom/thumbs/1200x1200/images/2019/10/09/casanha-tvstand-contempo-0051-1570619940.jpg", alt="")
+                .item.banner
+                    .img-banner
+                        img(src="https://cdn.fitin.vn/cms-ecom/thumbs/1200x1200/images/2019/10/09/casanha-tvstand-contempo-0060-1570619941.jpg", alt="")
+                .item.banner
+                    .img-banner
+                        img(src="https://cdn.fitin.vn/cms-ecom/thumbs/1200x1200/images/2019/10/09/casanha-tvstand-contempo-0046-1570619947.jpg", alt="")
+                .item.banner
+                    .img-banner
+                        img(src="https://cdn.fitin.vn/cms-ecom/thumbs/1200x1200/images/2019/10/09/casanha-tvstand-contempo-0026-1570619947.jpg", alt="")
+        .item-details.col-md-5
+            .item-name
+                p.name tủ tivi
+                .brand
+                    span thương hiệu: 
+                    span mã số: 0001A12
+            hr
+            .price
+                .product-body
+                    span chất liệu:
+                    span gỗ ép công nghiệp
+                .product-body
+                    span kích thước:
+                    span 160 x 45 x 50
+                        
+                .quantity
+                    span số lượng:
+                    .numberics
+                        button.btn-number(data-type="minus") -
+                        input.input-number(type="text", value="1", name="price", min="1" max="10") 
+                        button.btn-number(data-type="plus") +
+                    #maxquantity.extent
+                        span hiện tại chỉ còn 10 sản phẩm
+                .price
+                    span giá:
+                    span 
+                
+            hr
+            .shipping
+                .title
+                    <i class="fas fa-truck"></i>
+                    span phương thức giao hàng 
+                .body
+                    p chúng tôi sẽ giao hàng cho bạn dự kiến từ 3 - 5 ngày
+                    .fast-ship
+                        input.btn-check(type="checkbox") 
+                        span chọn phương thức giao hàng nhanh   
+                #fastshipping.extent
+                    span giao hàng nhanh sẽ tính thêm phí vận chuyển 
+            hr
+            .shopping
+                <i class="fas fa-shopping-cart"></i> 
+                span chọn mua         
     .tab-wrapper
         ul.container.tabs
             li.tab-title
