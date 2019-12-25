@@ -50,21 +50,7 @@
                     color: #424548;
                     text-decoration: none !important;
                 }
-                ::after {
-                    content: '';
-                    position: absolute;
-                    width: 0;
-                    height: 1px;
-                    left: 50%;
-                    bottom: 0;
-                    background-color: black;
-                    transition: all .3s ease;
-                }
-                &>:hover::after{
-                    width: 100%;
-                    transition: all .3s ease;
-                    left: 0;
-                }
+                
                 
             }
         }
@@ -82,22 +68,11 @@
                 color: #424548;
                 text-decoration: none !important;
             }
-            ::after {
-                content: '';
-                position: absolute;
-                width: 0;
-                height: 1px;
-                left: 50%;
-                bottom: 0;
-                background-color: black;
-                transition: all .3s ease;
+            &:hover{
+                a,i{
+                    color: #2d9b00;
+                }
             }
-            &>:hover::after{
-                width: 100%;
-                transition: all .3s ease;
-                left: 0;
-            }
-            
         }
     }
     .product-item-list {
