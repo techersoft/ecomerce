@@ -2,6 +2,9 @@ var btnShowControl = $('#btn-show-controls');
 var conceptControl = $('#nav-controls-concept');
 var btnControlTag = $('#btn-control-tags');
 var itemTag = $('.tag-item');
+var moreProduct = $('.more-product');
+var carouselProduct = $('.carousel-product');
+var hideProduct = $('.hide-product');
 
 $(document).ready(function(){
     btnShowControl.click(function(e){
@@ -20,5 +23,16 @@ $(document).ready(function(){
             $(this).children().prev().removeClass('color-default');
             $(this).children().prev().addClass('color-green')
         }
+    })
+    itemTag.click(function(){
+        moreProduct.toggleClass('d-block');
+        carouselProduct.toggleClass('height-down');
+    })
+    hideProduct.click(function(){
+        moreProduct.removeClass('d-block');
+        carouselProduct.removeClass('height-down');
+    })
+    window.click(function(){
+
     })
 })
