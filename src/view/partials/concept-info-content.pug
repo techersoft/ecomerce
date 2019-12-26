@@ -1,3 +1,5 @@
+
+include ./datafake.pug
 .concept-info_wrapper
     .concept-content-box.p-3
         .concept-content-space-owner    
@@ -15,9 +17,9 @@
                         span.fa.fa-star.checked
                         span.fa.fa-star.checked
                     span.ml-2(style="font-size:13px;line-height:23px") 4 Reviews
-    .concept-content-box.p-3
+    .concept-content-box.p-3.pb-0
         .concept-content-space-info
-            .space-info_title
+            .space-info_title.mb-1
                 h2
                     span.space-title__line Albany Four - New Show Home
                     span.space-title__line.space-title__line-sub Contemporary Pool, Auckland
@@ -30,12 +32,44 @@
                     li
                         a(href="#").text-green Website
                             span.more-icon
-            .space-description
+            .space-description.mb-3
                 p Mike Hollman
             .concept-project-photo
-                .project-photo_title
-                    h2.fz-14 Other Photos in 
+                .concept_title
+                    h2 Other Photos in 
                         a(href="#").text-green Albany Four
-
-
-
+                    .project-photo_img.my-2
+                        .row.m-0
+                            .box-img.px-1.mb-2.grid-reponsive-custom
+                                a(href="#")
+                                    .img_responsive
+                                        img(src="https://st.hzcdn.com/fimgs/8761dd7607699e6c_2233-w75-h75-b0-p0--home-design.jpg")
+                            .box-img.px-1.mb-2.grid-reponsive-custom
+                                a(href="#")
+                                    .img_responsive
+                                        img(src="https://st.hzcdn.com/fimgs/3ea1c66107699e23_1966-w75-h75-b0-p0--home-design.jpg")
+                            .box-img.px-1.mb-2.grid-reponsive-custom
+                                a(href="#")
+                                    .img_responsive
+                                        img(src="https://st.hzcdn.com/fimgs/1091cb9207699dff_1965-w75-h75-b0-p0--home-design.jpg")
+                            .box-img.px-1.mb-2.grid-reponsive-custom
+                                a(href="#")
+                                    .img_responsive
+                                        img(src="https://st.hzcdn.com/fimgs/d9116f9507699e8f_1906-w75-h75-b0-p0--home-design.jpg")
+                            .box-img.px-1.mb-2.grid-reponsive-custom
+                                a(href="#")
+                                    .img_responsive
+                                        img(src="https://st.hzcdn.com/fimgs/93d180a507699f68_1987-w75-h75-b0-p0--home-design.jpg")
+    .concept-content-box.p-3
+        .contept-content-recommendations-spaces
+            .concept_title
+                h2 Similar Ideas 
+            .recommendations-spaces_photo
+                .recommendations-spaces_photo_img.my-2
+                    .row.m-0
+                        each item in listImgConcept
+                            .box-img.px-1.mb-2.grid-reponsive-custom
+                                a(href="#")
+                                    .img_responsive
+                                        img(src=item)
+            
