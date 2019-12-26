@@ -99,7 +99,7 @@ $star-off-color: #CCCCCC;
         color: #268200 !important;
     }
 }
-.project-photo_img{
+.concept-content-box{
     .box-img{
         img{
             max-width: 75px;
@@ -109,6 +109,88 @@ $star-off-color: #CCCCCC;
         }
     }
 }
+.space-rel-prod_photo_img{
+    .space-price{
+        span{
+            font-size: 14px;
+        }
+    }
+    .box-img{
+        .img_responsive{
+            position: relative;
+            &:hover{
+                &:before{
+                    opacity: 1;
+                    pointer-events: auto;
+                    transition: all .3s ease;
+                }
+            }
+            &:before{
+                content: 'Xem ngay';
+                color: #fff;
+                display: flex;
+                font-size: 14px;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                font-weight: bold;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(113, 112, 112, 0.678);
+                opacity: 0;
+                pointer-events: none;
+                transition: all .3s ease;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                max-width: 95px;
+                max-height: 95px;
+            }
+        }
+
+    }
+}
 .grid-reponsive-custom{
     width: 20%;
+}
+.btn-cmt-quest{
+    border: 1px solid #cccccc;
+    color: #4c4c4c;
+    background-color: #fafafa;
+    display: block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover,&:focus{
+        outline: none;
+        background-color:#e7e7e7;
+    }
+}
+.concept-info-area{
+    overflow-y: auto;
+}
+.notification-cmt-quest{
+    span{
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
 }
