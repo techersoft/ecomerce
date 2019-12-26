@@ -100,16 +100,12 @@
                     text-decoration: none;
                     transition: color 0.2s ease;
                 }
-                &:hover {
-                    a {
-                        color: #37d260;
-                    }
-                }
+            
             }
             .active {
                 border-top: 2px black solid;
                 a {
-                    color: #37d260;
+                    color: #000;
                 }
             }
         }
