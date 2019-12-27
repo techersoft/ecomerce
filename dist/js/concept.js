@@ -25,11 +25,11 @@ $(document).ready(function () {
     }
   });
   itemTag.click(function () {
-    moreProduct.toggleClass('d-block');
     carouselProduct.toggleClass('height-down');
+    moreProduct.toggleClass('show-more-product');
   });
   hideProduct.click(function () {
-    moreProduct.removeClass('d-block');
+    moreProduct.removeClass('show-more-product');
     carouselProduct.removeClass('height-down');
   });
   window.click(function () {});
