@@ -33,33 +33,36 @@
             a.category-item(href="./category-product.html")
                 img(src="https://cdn.fitin.vn/cms-ecom/images/2019/10/29/trang-tri-at-3x-1572344851.png")
                 p TRANG TRÍ
-        .on-sale-product.my-2
-            .title
+        .on-sale-product.my-3
+            .title.py-2
                 h4.product-title.m-0 sản phẩm đang giảm giá
                 .extentsion.px-2 
                     a(href="").mr-2 xem thêm sản phẩm 
                     <i class="fas fa-chevron-right"></i>
-            .product-item-list.my-2.p-2
+            .product-item-list.px-3
+                include ./list-product-category.pug
             include ./sale-ticket.pug
-        .hot-product.my-2
-            .title
+        .hot-product.my-3
+            .title.py-2
                 h4.product-title.m-0 sản phẩm bán chạy
                 .extentsion.px-2 
                     a(href="").mr-2 xem thêm sản phẩm 
                     <i class="fas fa-chevron-right"></i>
-            .product-item-list.my-2.p-2
-        .collection-product
-            .title
+            .product-item-list.px-3
+                include ./list-product-category.pug
+        .collection-product.my-3
+            .title.py-2
                 h4.product-title.m-0 sản phẩm mới
                 .extentsion.px-2 
                     a(href="").mr-2 xem thêm sản phẩm 
                     <i class="fas fa-chevron-right"></i>
-            .product-item-list.my-2.p-2
-        .recent-product
-            .title
+            .product-item-list.px-3
+                include ./list-product-category.pug
+        .recent-product.my-3
+            .title.py-2
                 h4.product-title.m-0 sản phẩm xem gần đây
                 .extentsion.px-2 
                     a(href="").mr-2 xem thêm sản phẩm 
                     <i class="fas fa-chevron-right"></i>
-            .product-item-list.my-2.p-2
-        
+            .product-item-list.px-3
+                include ./list-product-category.pug
