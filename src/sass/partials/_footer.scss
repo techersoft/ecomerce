@@ -6,6 +6,8 @@
         img {
             width: 100%;
             height: 300px;
+            display: block;
+            object-fit: cover;
         }
         .search-bar {
             top: 50%;
@@ -17,6 +19,7 @@
             .title {
                 width: 100%;
                 text-align: center;
+                padding-bottom: 10px;
             }
             .input-bar{
                 display: flex;
@@ -80,10 +83,11 @@
             }
             .image-diploma {
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 justify-content: center;
                 img {
-                    width: 200px;
+                    width: 150px;
+                    margin-right: 15px;
                 }
             }
         }
@@ -94,7 +98,7 @@
                 flex-direction: column;
                 img {
                     margin: 10px;
-                    width: 100px;
+                    width: 80px;
                 }
             }
             .social-icon {
@@ -104,11 +108,11 @@
                 flex-direction: column;
                 .icon {
                     justify-content: center;
-                    padding: 10px;
+                    padding: 0 10px;
                     i {
-                        color: #dc3545;
                         margin: 10px;
-                        font-size: 50px;
+                        font-size: 40px;
+                        cursor: pointer;
                     }
                 }
                 
@@ -118,7 +122,6 @@
 
 
     .content-data {
-        padding: 0 10px;
         li {
             list-style: none;
             a {
