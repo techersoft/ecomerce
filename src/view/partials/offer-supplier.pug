@@ -1,0 +1,49 @@
+include datafake.pug
+.wrapper-offer-supplier
+    .offer-supplier_header-title.text-center.p-2
+        h2 DANH SÁCH NHÀ CUNG CẤP
+    .offer-supplier_list-content
+        each item in listOfferSupplierItem
+            .offer_list_item.p-3
+                .box-list_info
+                    .list_item_img
+                        img(src=item.imgInfo)
+                    .list_item_info
+                        .item_info(name="name")
+                            p Tên sản phẩm:
+                            span=item.name
+                        .item_info(name="price")
+                            p Giá :
+                            span=item.price
+                                sup đ
+                        .item_info
+                            a.supplier_logo(href="./store-homepage.html")
+                                img(src=item.logo)
+                .widget-see-details.text-right
+                    button.btn-see-details Xem chi tiết
+                    .details-supplier.text-left
+                        .details-supplier_title.p-3
+                            a.supplier_logo(href="./store-homepage.html")
+                                    img(src=item.logo)
+                            h2=item.nameSupplier
+                        .details-supplier-content.px-3.py-2
+                            .item_info
+                                p Tên sản phẩm:
+                                span.ml-1=item.name
+                            .item_info
+                                p Giá:
+                                span.ml-1=item.price
+                            .item_info
+                                p Số lượng đặt tối thiểu:
+                                span.ml-1=item.minQuantity
+                            .item_info
+                                p Thời gian giao hàng:
+                                span.ml-1
+                            .item_info
+                                p DH:
+                                span.ml-1
+                            .item_info
+                                p Mô tả chi tiết:
+                                span.ml-1
+                        button.btn-close-details-supplier ĐÓNG
+                            
