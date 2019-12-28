@@ -1,6 +1,77 @@
 .concept-layout{
     display: flex;
 }
+
+.menu-concept{
+    position: fixed;
+    right: 0;
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    .left-menu,.right-menu{
+        display: flex;
+        a{
+            padding: 10px 15px;
+            &:hover{
+                i{
+                    color: #333;
+                }
+            }
+        }
+    }
+    .left-menu{
+        a{
+            border-top: 3px solid transparent;
+            &:active,
+            &:focus{
+                background-color: #fff;
+                border-top: 3px solid green;
+                box-shadow: 2px -1px 1px rgba(0,0,0,0.08), -2px -1px 1px rgba(0,0,0,0.08);
+            }
+        }
+    }
+    .right-menu{
+        a{
+            position: relative;
+            height: 100%;
+            &:hover{
+                background-color: #ccc;
+            }
+            span{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                border-radius: 50%;
+                background: #4dbc15;
+                width: 15px;
+                height: 15px;
+                font-size: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+            }
+        }
+        .close{
+            background-color: #222;
+            i{
+                font-size: 18px;
+                &::before{
+                    color: white;
+                }
+            }
+            &:hover{
+                background: #000;
+            }
+        }
+    }
+    .active-concept{
+        background-color: #fff;
+        border-top: 3px solid green !important;
+        box-shadow: 2px -1px 1px rgba(0,0,0,0.08), -2px -1px 1px rgba(0,0,0,0.08);
+    }
+}
 .concept-info-area{
     width: 420px;
     background-color: #fff;
