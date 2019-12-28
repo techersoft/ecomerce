@@ -1,8 +1,23 @@
 
 include ./datafake.pug
 .concept-info_wrapper
-    .concept-content-box.p-3
-        .concept-content-space-owner    
+    .menu-concept
+        ul.left-menu
+            li
+                a.menu-concept-item.active-concept(href="#photo") <i class="fas fa-image"></i>
+            li
+                a.menu-concept-item(href="#tag") <i class="fas fa-tag"></i>
+            li
+                a.menu-concept-item(href="#question") <i class="fas fa-question-circle"></i>
+        ul.right-menu
+            li
+                a(href="#") 
+                    <i class="fas fa-shopping-cart"></i>
+                    span 0
+            li
+                a.close(href="./index.html") <i class="fas fa-times"></i>
+    .concept-content-box.p-3.pt-5
+        .concept-content-space-owner.mt-3  
             .concept-content-space-owner_info-avatar
                 a(href="#")
                     img(src="https://st.hzcdn.com/simgs/ee53d18f01071ab1_1-0081/_.jpg")
@@ -34,7 +49,7 @@ include ./datafake.pug
                             span.more-icon
             .space-description.mb-5
                 p Mike Hollman
-            .concept-project-photo
+            .concept-project-photo#photo
                 .concept_title
                     h2 Other Photos in 
                         a(href="#").text-green.ml-1 Albany Four
@@ -73,7 +88,7 @@ include ./datafake.pug
                                     .img_responsive
                                         img(src=item)
     .concept-content-box.px-3.pt-3
-        .contept-content-space-rel-prod
+        .contept-content-space-rel-prod#tag
             .concept_title
                 h2 Related Products
             .space-rel-prod_photo
@@ -87,7 +102,7 @@ include ./datafake.pug
                                     .space-price.text-center.d-block
                                         span=item.price
     .concept-content-box.px-3.pt-3
-        .contept-content-comment-question
+        .contept-content-comment-question#question
             .concept_title
                 h2 Questions About This Photo (25)
             .comment-question.my-3
