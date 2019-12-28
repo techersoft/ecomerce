@@ -1,5 +1,6 @@
 "use strict";
 
+var sou;
 var search = document.getElementById('search-box');
 
 function hideSearch() {

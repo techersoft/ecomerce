@@ -7,6 +7,7 @@ var itemTag = $('.tag-item');
 var moreProduct = $('.more-product');
 var carouselProduct = $('.carousel-product');
 var hideProduct = $('.hide-product');
+var menuConcept = $('.left-menu li');
 $(document).ready(function () {
   btnShowControl.click(function (e) {
     conceptControl.toggleClass('d-block');
@@ -31,6 +32,11 @@ $(document).ready(function () {
   hideProduct.click(function () {
     moreProduct.removeClass('show-more-product');
     carouselProduct.removeClass('height-down');
+  }); // window.click(function(){
+  // })
+
+  menuConcept.click(function () {
+    $(this).children().addClass('active-concept');
+    $(this).siblings().children().removeClass('active-concept');
   });
-  window.click(function () {});
 });

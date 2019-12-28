@@ -84,8 +84,20 @@
       </div>
       <div class="concept-info-area">
         <div class="concept-info_wrapper">
-          <div class="concept-content-box p-3">
-            <div class="concept-content-space-owner">   
+          <div class="menu-concept">
+            <ul class="left-menu">
+              <li><a class="menu-concept-item active-concept" href="#photo"><i class="fas fa-image"></i></a></li>
+              <li><a class="menu-concept-item" href="#tag"><i class="fas fa-tag"></i></a></li>
+              <li><a class="menu-concept-item" href="#question"><i class="fas fa-question-circle"></i></a></li>
+            </ul>
+            <ul class="right-menu">
+              <li><a href="#">
+                   <i class="fas fa-shopping-cart"></i><span>0</span></a></li>
+              <li><a class="close" href="./index.html"><i class="fas fa-times"></i></a></li>
+            </ul>
+          </div>
+          <div class="concept-content-box p-3 pt-5">
+            <div class="concept-content-space-owner mt-3"> 
               <div class="concept-content-space-owner_info-avatar"><a href="#"><img src="https://st.hzcdn.com/simgs/ee53d18f01071ab1_1-0081/_.jpg"/></a></div>
               <div class="concept-content-space-owner_info-details ml-3">
                 <div class="space-owner_info-details_name"><a href="#" style="font-weight:600">Trung Hiếu</a></div>
@@ -110,7 +122,7 @@
               <div class="space-description mb-5">
                 <p>Mike Hollman</p>
               </div>
-              <div class="concept-project-photo">
+              <div class="concept-project-photo" id="photo">
                 <div class="concept_title">
                   <h2>Other Photos in <a class="text-green ml-1" href="#">Albany Four</a></h2>
                   <div class="project-photo_img my-2">
@@ -165,7 +177,7 @@
             </div>
           </div>
           <div class="concept-content-box px-3 pt-3">
-            <div class="contept-content-space-rel-prod">
+            <div class="contept-content-space-rel-prod" id="tag">
               <div class="concept_title">
                 <h2>Related Products</h2>
               </div>
@@ -190,7 +202,7 @@
             </div>
           </div>
           <div class="concept-content-box px-3 pt-3">
-            <div class="contept-content-comment-question">
+            <div class="contept-content-comment-question" id="question">
               <div class="concept_title">
                 <h2>Questions About This Photo (25)</h2>
               </div>
@@ -218,5 +230,6 @@
     <script src="../js/sidebar.js"></script>
     <script src="../js/concept.js"></script>
     <script src="../js/product-info.js"></script>
+    <script src="../js/offer.js"></script>
   </body>
 </html>
