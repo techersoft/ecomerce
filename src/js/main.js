@@ -105,10 +105,10 @@ $(document).ready(function () {
     $("#media-image").ezPlus(
         {
             cursor: 'crosshair',
-            zoomWindowFadeIn: 500,
-            zoomWindowFadeOut: 500,
-            lensFadeIn: 500,
-            lensFadeOut: 500,
+            zoomWindowFadeIn: 1000,
+            zoomWindowFadeOut: 100,
+            lensFadeIn: 1000,
+            lensFadeOut: 100,
             zoomWindowWidth: 400,
             zoomWindowHeight: 400
         }
