@@ -93,7 +93,28 @@ $(document).ready(function () {
   // Zoom image when hover
 
   $("#media-image").ezPlus({
-    zoomType: 'inner',
-    cursor: 'crosshair'
+    cursor: 'crosshair',
+    zoomWindowFadeIn: 1000,
+    zoomWindowFadeOut: 100,
+    lensFadeIn: 1000,
+    lensFadeOut: 100,
+    zoomWindowWidth: 400,
+    zoomWindowHeight: 400
+  }); // Display Image Upload
+
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $('#output').attr('src', e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  $("#upload").change(function () {
+    readURL(this);
   });
 });
