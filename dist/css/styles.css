@@ -1537,13 +1537,13 @@ input {
 
 .item-1 {
   position: absolute;
-  top: 28%;
-  right: 24%; }
+  top: 55%;
+  left: 8%; }
 
 .item-2 {
   position: absolute;
-  top: 49%;
-  right: 16%; }
+  top: 67%;
+  right: 31%; }
 
 @-webkit-keyframes zoomIn {
   from {

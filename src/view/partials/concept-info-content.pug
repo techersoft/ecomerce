@@ -31,7 +31,7 @@ include ./datafake.pug
                         span.fa.fa-star.checked
                         span.fa.fa-star.checked
                         span.fa.fa-star.checked
-                    span.ml-2(style="font-size:13px;line-height:23px") 4 Reviews
+                    span.ml-2(style="font-size:13px;line-height:23px") 4 Lượt xem
     .concept-content-box.px-3.pt-3.pb-0
         .concept-content-space-info
             .space-info_title.mb-1
@@ -51,34 +51,34 @@ include ./datafake.pug
                 p Mike Hollman
             .concept-project-photo#photo
                 .concept_title
-                    h2 Other Photos in 
+                    h2 Hình ảnh khác
                         a(href="#").text-green.ml-1 Albany Four
                     .project-photo_img.my-2
                         .row.m-0
                             .box-img.px-1.mb-2.grid-reponsive-custom
                                 a(href="#")
                                     .img_responsive
-                                        img(src="https://st.hzcdn.com/fimgs/8761dd7607699e6c_2233-w75-h75-b0-p0--home-design.jpg")
+                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
                             .box-img.px-1.mb-2.grid-reponsive-custom
                                 a(href="#")
                                     .img_responsive
-                                        img(src="https://st.hzcdn.com/fimgs/3ea1c66107699e23_1966-w75-h75-b0-p0--home-design.jpg")
+                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
                             .box-img.px-1.mb-2.grid-reponsive-custom
                                 a(href="#")
                                     .img_responsive
-                                        img(src="https://st.hzcdn.com/fimgs/1091cb9207699dff_1965-w75-h75-b0-p0--home-design.jpg")
+                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
                             .box-img.px-1.mb-2.grid-reponsive-custom
                                 a(href="#")
                                     .img_responsive
-                                        img(src="https://st.hzcdn.com/fimgs/d9116f9507699e8f_1906-w75-h75-b0-p0--home-design.jpg")
+                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
                             .box-img.px-1.mb-2.grid-reponsive-custom
                                 a(href="#")
                                     .img_responsive
-                                        img(src="https://st.hzcdn.com/fimgs/93d180a507699f68_1987-w75-h75-b0-p0--home-design.jpg")
+                                        img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg")
     .concept-content-box.px-3.pt-3
         .contept-content-recommendations-spaces
             .concept_title
-                h2 Similar Ideas 
+                h2 Ý tưởng tương tự 
             .recommendations-spaces_photo
                 .recommendations-spaces_photo_img.my-2
                     .row.m-0
@@ -90,13 +90,13 @@ include ./datafake.pug
     .concept-content-box.px-3.pt-3
         .contept-content-space-rel-prod#tag
             .concept_title
-                h2 Related Products
+                h2 Sản phẩm liên quan
             .space-rel-prod_photo
                 .space-rel-prod_photo_img.my-2
                     .row.m-0
                         each item in listImgConceptProduct
                             .box-img.px-1.mb-2.col-3
-                                a(href="#")
+                                a(href=item.href)
                                     .img_responsive
                                         img(src=item.src)
                                     .space-price.text-center.d-block
@@ -104,7 +104,7 @@ include ./datafake.pug
     .concept-content-box.px-3.pt-3
         .contept-content-comment-question#question
             .concept_title
-                h2 Questions About This Photo (25)
+                h2 Câu hỏi về bức ảnh này (25)
             .comment-question.my-3
                 .btn-cmt-quest
                     button.btn_cmt-quest Hỏi Đáp
