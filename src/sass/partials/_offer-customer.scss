@@ -1,13 +1,16 @@
 #customer-auction {
-    padding: 10px 20px;
-    width: calc(100% - 420px);
-    border: 1px solid #ccc;
-
+    width: 100%;
     img {
         width: 100%;
         height: 100%;
     }
-
+    .wrapper-content-customer{
+        padding: 10px 20px;
+    }
+    .customer-title{
+        border-bottom: 1px solid #e8e8e8;
+        position: relative;
+    }
     input, textarea {
         border: 1px solid #ccc !important;
     }
@@ -27,7 +30,6 @@
         }
     }
     .auction-upload-image {
-        border: 1px solid #eee;
         min-height: 150px;
     }
 }

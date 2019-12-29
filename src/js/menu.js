@@ -60,6 +60,8 @@ $(document).ready(function(){
             $("body").css('overflow','auto');
             $("#logo-header").css('opacity','1');
             $('.op-menu').removeClass('clo-menu');
+            $('.offer-content-list-supplier').removeClass('show-list-details');
+            
         }
     });
 

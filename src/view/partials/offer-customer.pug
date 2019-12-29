@@ -1,43 +1,64 @@
+.bg-wrapper
+.bg-wrapper.bg-wrapper-popup
 #customer-auction
-   
-    .auction-upload-btn
-        label(for="upload").btn.btn-upload Thêm hình ảnh
-        input(type="file" name="upload" id="upload"  accept="image/*")
-
-    .auction-upload-image
-        .row.mx-0
-            .col-md-4.images.px-0
-                img#output(src="", alt="")
-
-    .aution-form.mt-3
-        form
+    .customer-title.text-center.p-2
+        h2 Thông tin đơn hàng
+        .btn-show-list-details
+            button#show-list-details
+                <i class="fas fa-stream"></i>
+    .wrapper-content-customer
+        .auction-upload-btn
+            label(for="upload").btn.btn-upload Thêm hình ảnh
+            input(type="file" name="upload" id="upload"  accept="image/*")
+        .auction-upload-image
             .row.mx-0
-                .col-md-6.pl-0
-                    .form-group
-                        label(for="amount") Số lượng đặt hàng
-                        input.form-control(type="number")
-                    .form-group
-                        label(for="amount") Kích thước
-                        input.form-control(type="text")
-                    .form-group
-                        label(for="colors") Màu sắc
-                        select.form-control
-                            option Đen
-                            option Đỏ
-                            option Cam
-                .col-md-6.pr-0
-                     .form-group
-                        label(for="amount") Chất liệu
-                        input.form-control(type="text")
-                     .form-group
-                        label(for="amount") Giá mong muốn
-                        .row.mx-0
-                            .col-lg-6.pl-0
-                                input.form-control(type="number" placeholder="Từ")
-                            .col-lg-6.pr-0
-                                input.form-control(type="number" placeholder="Đến")
-                     .form-group
-                        label(for="amount") Mô tả
-                        textarea.form-control(name="", cols="30", rows="3")
-                .form-group.text-center.w-100.mt-3
-                    button.btn.btn-success  Xác nhận
+                .col-md-4.images.px-0
+                    img#output(src="https://images.wallpaperscraft.com/image/living_room_dining_room_chairs_table_room_design_7335_1920x1080.jpg", alt="")
+        .aution-form.mt-3
+            form
+                .row.mx-0
+                    .col-12.px-0
+                        .row
+                            .col-lg-4
+                                .form-group
+                                    label(for="amount") Số lượng đặt hàng
+                                    input.form-control(type="number")
+                            .col-lg-4        
+                                .form-group
+                                    label(for="amount") Kích thước
+                                    input.form-control(type="text")
+                            .col-lg-4    
+                                .form-group
+                                    label(for="colors") Màu sắc
+                                    select.form-control
+                                        option Đen
+                                        option Đỏ
+                                        option Cam
+                    .col-12.px-0
+                        .row
+                            .col-lg-4
+                                .form-group
+                                    label(for="amount") Chất liệu
+                                    input.form-control(type="text")
+                            //- .col-lg-4
+                            //-     .form-group
+                            //-         label(for="amount") Giá mong muốn
+                            //-         input.form-control(type="number" placeholder="Từ")
+                            //- .col-lg-4
+                            //-     .form-group
+                            //-         label(for="amount") Chất liệu
+                            //-         input.form-control(type="number" placeholder="Đến")
+                            .col-lg-8
+                                .form-group
+                                    label(for="amount") Giá mong muốn
+                                    .row.mx-0
+                                        .col-6.pl-0
+                                            input.form-control(type="number" placeholder="Từ")
+                                        .col-6.pr-0
+                                            input.form-control(type="number" placeholder="Đến")
+                    .w-100
+                        .form-group
+                            label(for="amount") Mô tả
+                            textarea.form-control(name="", cols="30", rows="3")
+                    .form-group.text-center.w-100.mt-3
+                        button.btn.btn-success  Xác nhận
