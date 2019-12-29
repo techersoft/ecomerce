@@ -965,6 +965,7 @@ input {
     transform: translate(-50%, -50%); }
     #banner .banner .text-banner .title-banner h3 {
       font-size: 48px;
+      color: white;
       font-weight: 700; }
     #banner .banner .text-banner .text-content span {
       margin-top: 8px;
