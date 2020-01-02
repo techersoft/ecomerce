@@ -3078,14 +3078,15 @@ input {
   text-align: center; }
 
 #customer-auction {
-  padding: 10px 20px;
-  width: -webkit-calc(100% - 420px);
-  width: -moz-calc(100% - 420px);
-  width: calc(100% - 420px);
-  border: 1px solid #ccc; }
+  width: 100%; }
   #customer-auction img {
     width: 100%;
     height: 100%; }
+  #customer-auction .wrapper-content-customer {
+    padding: 10px 20px; }
+  #customer-auction .customer-title {
+    border-bottom: 1px solid #e8e8e8;
+    position: relative; }
   #customer-auction input, #customer-auction textarea {
     border: 1px solid #ccc !important; }
   #customer-auction .auction-upload-btn input[type="file"] {
@@ -3099,7 +3100,6 @@ input {
     cursor: pointer;
     z-index: 99; }
   #customer-auction .auction-upload-image {
-    border: 1px solid #eee;
     min-height: 150px; }
 
 .header-offer .wrapper-header {
@@ -3114,10 +3114,12 @@ input {
   display: flex; }
 
 .offer-content-list-supplier {
+  z-index: 12;
   width: 420px;
   height: 100vh;
   font-size: 14px;
-  border-left: 1px solid #ccc; }
+  border-left: 1px solid #ccc;
+  background: #fff; }
   .offer-content-list-supplier .offer-supplier_header-title {
     border-bottom: 1px solid #e6e6e6;
     background-color: #00c707da; }
@@ -3214,7 +3216,8 @@ input {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   -moz-transition: all .3s ease;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+  z-index: 14; }
 
 .btn-close-details-supplier {
   border: 1px solid #f0f0f0;
@@ -3229,7 +3232,7 @@ input {
     outline: none;
     background: #b7b8b7; }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .details-supplier {
     width: 500px; } }
 
@@ -3273,6 +3276,97 @@ input {
   .details-supplier_title h2 {
     font-size: 18px;
     font-weight: 600; }
+
+.btn-show-list-details {
+  position: absolute;
+  display: none;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .btn-show-list-details #show-list-details {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease; }
+    .btn-show-list-details #show-list-details:hover, .btn-show-list-details #show-list-details:focus {
+      outline: none;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      transition: all .3s ease; }
+
+.customer-title h2 {
+  font-size: 18px; }
+
+@media only screen and (max-width: 992px) {
+  .offer-content-list-supplier {
+    position: absolute;
+    right: 0;
+    display: none; }
+  .show-list-details {
+    display: block !important; }
+  .offer-content-customer {
+    width: 100%; }
+  .btn-show-list-details {
+    position: absolute;
+    display: block; } }
+
+.bg-wrapper-popup {
+  z-index: 13 !important; }
+
+.title-introduce h3 {
+  padding: 20px 0 15px; }
+
+.text-introduce {
+  padding: 5px 0;
+  font-size: 14px; }
+
+.img-introduce img {
+  width: 100%;
+  display: block;
+  max-height: 400px; }
+
+.main-contacts span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400; }
+
+.title-contact {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal !important; }
+
+.introduce-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.text-green {
+  color: #177e17; }
 
 body {
   margin: 0; }

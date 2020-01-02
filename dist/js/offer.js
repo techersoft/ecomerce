@@ -14,4 +14,11 @@ $(document).ready(function () {
   $('.btn-close-details-supplier').click(function () {
     $('.details-supplier.show-details').removeClass('show-details');
   });
+  $('#show-list-details').click(function () {
+    $('.offer-content-list-supplier').addClass('show-list-details');
+    $('.bg-wrapper').addClass('show-bg-wrapper');
+  });
+  $('.btn-see-details').click(function () {
+    $('.bg-wrapper-popup').addClass('show-bg-wrapper');
+  });
 });

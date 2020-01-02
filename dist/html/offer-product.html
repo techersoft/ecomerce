@@ -14,63 +14,89 @@
   <body>
     <section class="offer-layout">
       <div class="offer-content-customer">
+        <div class="bg-wrapper"></div>
+        <div class="bg-wrapper bg-wrapper-popup"></div>
         <div id="customer-auction">
-          <div class="auction-upload-btn">
-            <label class="btn btn-upload" for="upload">Thêm hình ảnh</label>
-            <input type="file" name="upload" id="upload" accept="image/*"/>
-          </div>
-          <div class="auction-upload-image">
-            <div class="row mx-0">
-              <div class="col-md-4 images px-0"><img id="output" src="" alt=""/></div>
+          <div class="customer-title text-center p-2">
+            <h2>Thông tin đơn hàng</h2>
+            <div class="btn-show-list-details">
+              <button id="show-list-details"><i class="fas fa-stream"></i></button>
             </div>
           </div>
-          <div class="aution-form mt-3">
-            <form>
+          <div class="wrapper-content-customer">
+            <div class="auction-upload-btn">
+              <label class="btn btn-upload" for="upload">Thêm hình ảnh</label>
+              <input type="file" name="upload" id="upload" accept="image/*"/>
+            </div>
+            <div class="auction-upload-image">
               <div class="row mx-0">
-                <div class="col-md-6 pl-0">
-                  <div class="form-group">
-                    <label for="amount">Số lượng đặt hàng</label>
-                    <input class="form-control" type="number"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="amount">Kích thước</label>
-                    <input class="form-control" type="text"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="colors">Màu sắc</label>
-                    <select class="form-control">
-                      <option>Đen</option>
-                      <option>Đỏ</option>
-                      <option>Cam</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6 pr-0">
-                  <div class="form-group">
-                    <label for="amount">Chất liệu</label>
-                    <input class="form-control" type="text"/>
-                  </div>
-                  <div class="form-group">
-                    <label for="amount">Giá mong muốn</label>
-                    <div class="row mx-0">
-                      <div class="col-lg-6 pl-0">
-                        <input class="form-control" type="number" placeholder="Từ"/>
+                <div class="col-md-4 images px-0"><img id="output" src="https://images.wallpaperscraft.com/image/living_room_dining_room_chairs_table_room_design_7335_1920x1080.jpg" alt=""/></div>
+              </div>
+            </div>
+            <div class="aution-form mt-3">
+              <form>
+                <div class="row mx-0">
+                  <div class="col-12 px-0">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="amount">Số lượng đặt hàng</label>
+                          <input class="form-control" type="number"/>
+                        </div>
                       </div>
-                      <div class="col-lg-6 pr-0">
-                        <input class="form-control" type="number" placeholder="Đến"/>
+                      <div class="col-lg-4">       
+                        <div class="form-group">
+                          <label for="amount">Kích thước</label>
+                          <input class="form-control" type="text"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">   
+                        <div class="form-group">
+                          <label for="colors">Màu sắc</label>
+                          <select class="form-control">
+                            <option>Đen</option>
+                            <option>Đỏ</option>
+                            <option>Cam</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label for="amount">Mô tả</label>
-                    <textarea class="form-control" name="" cols="30" rows="3"></textarea>
+                  <div class="col-12 px-0">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="amount">Chất liệu</label>
+                          <input class="form-control" type="text"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="form-group">
+                          <label for="amount">Giá mong muốn</label>
+                          <div class="row mx-0">
+                            <div class="col-6 pl-0">
+                              <input class="form-control" type="number" placeholder="Từ"/>
+                            </div>
+                            <div class="col-6 pr-0">
+                              <input class="form-control" type="number" placeholder="Đến"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-100">
+                    <div class="form-group">
+                      <label for="amount">Mô tả</label>
+                      <textarea class="form-control" name="" cols="30" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group text-center w-100 mt-3">
+                    <button class="btn btn-success"> Xác nhận</button>
                   </div>
                 </div>
-                <div class="form-group text-center w-100 mt-3">
-                  <button class="btn btn-success"> Xác nhận</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
