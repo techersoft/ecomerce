@@ -1,18 +1,18 @@
 .bg-wrapper
 .bg-wrapper.bg-wrapper-popup
 #customer-auction
-    .customer-title.text-center.p-2
-        h2 Thông tin đơn hàng
-        .btn-show-list-details
-            button#show-list-details
-                <i class="fas fa-stream"></i>
+    //- .customer-title.text-center.p-2
+    //-     h2 Thông tin đơn hàng
+    .btn-show-list-details
+        button#show-list-details
+            <i class="fas fa-stream"></i>
     .wrapper-content-customer
         .auction-upload-btn
             label(for="upload").btn.btn-upload Thêm hình ảnh
             input(type="file" name="upload" id="upload"  accept="image/*")
         .auction-upload-image
             .row.mx-0
-                .col-md-4.images.px-0
+                .images.py-2
                     img#output(src="https://images.wallpaperscraft.com/image/living_room_dining_room_chairs_table_room_design_7335_1920x1080.jpg", alt="")
         .aution-form.mt-3
             form
@@ -60,5 +60,6 @@
                         .form-group
                             label(for="amount") Mô tả
                             textarea.form-control(name="", cols="30", rows="3")
-                    .form-group.text-center.w-100.mt-3
+                    .form-group.text-right.w-100.mt-3
                         button.btn.btn-success  Xác nhận
+                        button.btn.btn-cancel  Hủy bỏ

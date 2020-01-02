@@ -12,14 +12,18 @@
     width: 420px;
     height: 100vh;
     font-size: 14px;
-    border-left: 1px solid #ccc;
     background: #fff;
     .offer-supplier_header-title{
         border-bottom: 1px solid #e6e6e6;
-        background-color: #00c707da;;
+        background-color: #7a7a7ada;
+        align-items: center;
         h2{
             font-size: 18px;
             color: #fff;
+        }
+        i{
+            color: #fff;
+            font-size: 18px;
         }
     }
 }
@@ -145,11 +149,10 @@
     }
 }
 .btn-show-list-details{
-    position: absolute;
+    position: fixed;
     display: none;
     right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 15px;
     #show-list-details{
         transition: all .3s ease;
         &:hover,&:focus{
@@ -183,4 +186,44 @@
 }
 .bg-wrapper-popup{
     z-index: 13 !important;
+}
+.offer-content-space-owner_info-details{
+    .space-owner_info-details_name{
+        a{
+            color: #333;
+            &:hover{
+                color: green;
+            }
+        }
+    }
+    .space-owner_info-details_info{
+        a{
+            color: #888;
+            &:hover{
+                color: green;
+            }
+        }
+    }
+}
+.offer-supplier_header{
+    border-bottom: 1px solid #e8e8e8;
+}
+.wrapper-offer-supplier{
+    border-left: 1px solid #ccc;
+}
+.btn-cancel{
+    background: #ff2424;
+    color: #fff;
+    &:hover,&:focus{
+        outline: none;
+        background: #f01e1e;
+        color: #fff;
+    }
+}
+.auction-upload-image{
+    .images{
+        img{
+            max-height: 500px;
+        }
+    }
 }

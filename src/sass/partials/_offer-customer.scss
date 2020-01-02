@@ -5,7 +5,7 @@
         height: 100%;
     }
     .wrapper-content-customer{
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
     .customer-title{
         border-bottom: 1px solid #e8e8e8;
@@ -27,6 +27,7 @@
             color: #fff;
             cursor: pointer;
             z-index: 99;
+            margin: 0;
         }
     }
     .auction-upload-image {
