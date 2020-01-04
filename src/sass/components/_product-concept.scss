@@ -1,5 +1,5 @@
-#product-concept{
-    .product-concept{
+#product-concept,#product-offer{
+    .product-concept,.product-offer{
         position: absolute;
         left: 0;
         right: 0;
@@ -17,7 +17,7 @@
             padding: 10px 0;
             overflow: hidden;
             transition: all .3s ease;
-            .product-concept-item{
+            .product-concept-item,.product-offer-item{
                 position: relative;
                 width: 100%;
                 img{
@@ -63,7 +63,7 @@
             left: 0 !important;
             transition: all .3s ease;
         }
-        .more-product{
+        .more-product,.more-product-offer{
             position: absolute;
             width: 100%;
             bottom: 0;
@@ -97,11 +97,11 @@
                     left: 100%;
                 }
             }
-            .list-items-concept{
+            .list-items-concept,.list-items-offer{
                 display: flex;
                 height: 100%;
                 align-items: center;
-                .box-item-concept{
+                .box-item-concept,.box-item-offer{
                     color: #333;
                     position: relative;
                     width: 120px;

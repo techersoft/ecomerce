@@ -16,6 +16,10 @@ $(document).ready(function(){
         $('.offer-content-list-supplier').addClass('show-list-details')
         $('.bg-wrapper').addClass('show-bg-wrapper')
     })
+    $('.btn-close-menu-offer').click(function(){
+        $('.offer-content-list-supplier').removeClass('show-list-details')
+        $('.bg-wrapper').removeClass('show-bg-wrapper');
+    })
     $('.btn-see-details').click(function(){
         $('.bg-wrapper-popup').addClass('show-bg-wrapper')
     })
