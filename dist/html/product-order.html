@@ -274,249 +274,87 @@
           </div>
         </div>
       </section>
-      <main class="bg-deepgrey" id="main-content">
-        <div class="container-fluid mt-3">
-          <div class="store-product-menu my-3">
-            <div class="store-product-menu_content">
-              <ul class="d-flex">
-                <li class="active"><a href="#">Trang Chủ</a></li>
-                <li><a href="#">Tất cả sản phẩm </a></li>
-                <li><a href="./about-us.html">Giới thiệu</a></li>
-              </ul>
+      <section class="mt-3" id="product-order">
+        <div id="customer-auction">
+          <div class="wrapper-content-customer">
+            <div class="auction-upload-btn">
+              <label class="btn btn-upload" for="upload">Thêm hình ảnh</label>
+              <input type="file" name="upload" id="upload" accept="image/*"/>
             </div>
-          </div>
-          <div class="homepage-container">
-            <div class="store-banner"><img src="https://cdn6.f-cdn.com/contestentries/919936/22447020/586c29f5b03f2_thumb900.jpg"/></div>
-            <div class="hot-product-containe row m-0">
-              <div class="sale-advertisment col-8 p-0">
-                <div class="row sale-content m-0"><a class="sale-product col-6 p-0" href="">
-                    <div class="content p-0"><img src="https://www.peonyevents.co/wp-content/uploads/2019/09/adorable-chair-round-dining-room-set-seat-table-and-chairs-glass-marble-solid-wood.jpeg"/>
-                      <div class="sale-off">-40%</div>
-                      <div class="detail-product">
-                        <div class="price"> 
-                          <div class="old-price">23.600.000 VND</div>
-                          <div class="new-price">13.000.000 VND</div>
-                        </div>
-                        <div class="product-name">bộ bàn ăn cao cấp  </div>
-                      </div>
-                    </div></a><a class="sale-product col-6 p-0" href="">
-                    <div class="content p-0"><img src="https://www.peonyevents.co/wp-content/uploads/2019/09/adorable-chair-round-dining-room-set-seat-table-and-chairs-glass-marble-solid-wood.jpeg"/>
-                      <div class="sale-off">-40%</div>
-                      <div class="detail-product">
-                        <div class="price"> 
-                          <div class="old-price">23.600.000 VND</div>
-                          <div class="new-price">13.000.000 VND</div>
-                        </div>
-                        <div class="product-name">bộ bàn ăn cao cấp   </div>
-                      </div>
-                    </div></a></div>
-              </div>
-              <div class="hot-product col-4 d-flex p-0">
-                <div class="top-hot row m-0 cus-background"> 
-                  <div class="product-img col-6 p-0 d-flex"><img src="https://minhduongf.com/wp-content/uploads/2019/01/IMG_2679_preview.jpeg"/></div>
-                  <div class="product-detail col-6 p-0">
-                    <p class="product-name m-0">bàn gỗ </p>
-                    <p class="product-price m-0">1.500.000Đ</p>
-                  </div>
-                </div>
-                <div class="bottom-hot row m-0">
-                  <div class="product col-6 p-0">
-                    <div class="cus-background h-100">
-                      <div class="product-img"><img src="https://minhduongf.com/wp-content/uploads/2019/01/IMG_2679_preview.jpeg"/></div>
-                      <div class="product-detail">
-                        <p class="product-price m-0">1.500.000Đ </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product col-6 p-0">
-                    <div class="cus-background h-100">
-                      <div class="product-img"><img src="https://minhduongf.com/wp-content/uploads/2019/01/IMG_2679_preview.jpeg"/></div>
-                      <div class="product-detail">
-                        <p class="product-price m-0">1.500.000Đ</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="auction-upload-image">
+              <div class="row mx-0 my-2">
+                <div class="col-4 p-0"><img id="output" src="https://images.wallpaperscraft.com/image/living_room_dining_room_chairs_table_room_design_7335_1920x1080.jpg" alt=""/></div>
               </div>
             </div>
-          </div>
-          <div class="product-list">
-            <div class="product-list-title d-flex justify-content-between align-items-center mb-2">
-              <h3>Sản phẩm nổi bật</h3><a class="read-more" href="#">Xem thêm <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="product-list-slider">
-              <div class="row">
-                <div class="col-sm-6 col-md-4 col-xl-3">
-                  <div class="product-item my-3 bg-white">
-                    <div class="product-item-header">
-                      <div class="product-item-badges"><span class="discount"> </span><span class="status unlike cursor-pointer"><i class="fas fa-heart"></i></span></div><a class="product-item-image" href="./product-detail-5.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/27/arboard-3-1577416726.jpg" alt="Product Image"/></a>
-                    </div>
-                    <div class="product-item-body mt-1">
-                      <div class="product-item-slider owl-carousel owl-carousel-2">
-                        <div class="thumbnail-item active"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/27/arboard-3-1577416726.jpg" alt="Product Image"/></div>
+            <div class="aution-form mt-3">
+              <form>
+                <div class="row mx-0">
+                  <div class="col-12 px-0">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="amount">Số lượng đặt hàng</label>
+                          <input class="form-control" type="number"/>
+                        </div>
                       </div>
-                      <div class="product-item-info px-3 pb-3 pt-2"><a class="cursor-pointer" href="#">
-                          <h3 class="product-info-title">Bàn trà luxury gold</h3></a>
-                        <div class="d-flex justify-content-between align-items-center pt-3">
-                          <div class="product-stars-rating"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)</span></div>
-                          <div class="product-location">Hồ Chí Minh    </div>
+                      <div class="col-lg-4">       
+                        <div class="form-group">
+                          <label for="amount">Kích thước</label>
+                          <input class="form-control" type="text"/>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">   
+                        <div class="form-group">
+                          <label for="colors">Màu sắc</label>
+                          <select class="form-control">
+                            <option>Đen</option>
+                            <option>Đỏ</option>
+                            <option>Cam</option>
+                          </select>
                         </div>
                       </div>
                     </div>
-                    <div class="product-item-footer d-flex justify-content-between align-items-center px-3 py-1">
-                      <div class="product-price">
-                        <p class="m-0 current-price">1,278,000 VND</p>
-                      </div>
-                      <div class="product-provider"><a href="./store-homepage-1.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png" alt=""/></a></div>
-                    </div>
                   </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">   
-                  <div class="product-item my-3 bg-white">
-                    <div class="product-item-header">
-                      <div class="product-item-badges"><span class="discount">-10%</span><span class="status unlike cursor-pointer"><i class="fas fa-heart"></i></span></div><a class="product-item-image" href="./product-detail-4.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/vivacph-coffeetable-ohw-0000-1572591277.jpg" alt="Product Image"/></a>
-                    </div>
-                    <div class="product-item-body mt-1">
-                      <div class="product-item-slider owl-carousel owl-carousel-2">
-                        <div class="thumbnail-item active"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/vivacph-coffeetable-ohw-0000-1572591277.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/vivacph-coffeetable-ohw-0008-1572591279.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/vivacph-coffeetable-ohw-0013-1572591280.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/vivacph-coffeetable-ohw-0024-1572591282.jpg" alt="Product Image"/></div>
+                  <div class="col-12 px-0">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label for="amount">Chất liệu</label>
+                          <input class="form-control" type="text"/>
+                        </div>
                       </div>
-                      <div class="product-item-info px-3 pb-3 pt-2"><a class="cursor-pointer" href="#">
-                          <h3 class="product-info-title">Bàn Cafe Hornum Walnut</h3></a>
-                        <div class="d-flex justify-content-between align-items-center pt-3">
-                          <div class="product-stars-rating"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(80)</span></div>
-                          <div class="product-location">Hồ Chí Minh    </div>
+                      <div class="col-lg-8">
+                        <div class="form-group">
+                          <label for="amount">Giá mong muốn</label>
+                          <div class="row mx-0">
+                            <div class="col-6 pl-0">
+                              <input class="form-control" type="number" placeholder="Từ"/>
+                            </div>
+                            <div class="col-6 pr-0">
+                              <input class="form-control" type="number" placeholder="Đến"/>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="product-item-footer d-flex justify-content-between align-items-center px-3 py-1">
-                      <div class="product-price">
-                        <p class="m-0 current-price">2,932,500 VND</p>
-                        <p class="m-0 old-price">3,450,000 VND</p>
-                      </div>
-                      <div class="product-provider"><a href="./store-homepage-1.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png" alt=""/></a></div>
+                  </div>
+                  <div class="w-100">
+                    <div class="form-group">
+                      <label for="amount">Mô tả</label>
+                      <textarea class="form-control" name="" cols="30" rows="3"></textarea>
                     </div>
                   </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-xl-3"> 
-                  <div class="product-item my-3 bg-white">
-                    <div class="product-item-header">
-                      <div class="product-item-badges"><span class="discount">-10%</span><span class="status unlike cursor-pointer"><i class="fas fa-heart"></i></span></div><a class="product-item-image" href="./product-detail-2.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/06/den-ghe-day-du-madrid-3-1575624599.jpg" alt="Product Image"/></a>
-                    </div>
-                    <div class="product-item-body mt-1">
-                      <div class="product-item-slider owl-carousel owl-carousel-2">
-                        <div class="thumbnail-item active"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/01/vivacph-coffeetable-ohw-0000-1572591277.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/06/den-ghe-day-du-madrid-4-1575624599.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/06/den-ghe-day-du-madrid-5-1575624599.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/06/den-ghe-day-du-madrid-6-1575624600.jpg" alt="Product Image"/></div>
-                      </div>
-                      <div class="product-item-info px-3 pb-3 pt-2"><a class="cursor-pointer" href="#">
-                          <h3 class="product-info-title">Ghế dây dù Madrid</h3></a>
-                        <div class="d-flex justify-content-between align-items-center pt-3">
-                          <div class="product-stars-rating"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)</span></div>
-                          <div class="product-location">Hồ Chí Minh    </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-item-footer d-flex justify-content-between align-items-center px-3 py-1">
-                      <div class="product-price">
-                        <p class="m-0 current-price">1,278,000 VND</p>
-                        <p class="m-0 old-price">1,420,000 VND</p>
-                      </div>
-                      <div class="product-provider"><a href="./store-homepage-1.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png" alt=""/></a></div>
-                    </div>
+                  <div class="form-group text-right w-100 mt-3">
+                    <button class="btn btn-success"> Xác nhận</button>
+                    <button class="btn btn-cancel"> Hủy bỏ</button>
                   </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-xl-3"> 
-                  <div class="product-item my-3 bg-white">
-                    <div class="product-item-header">
-                      <div class="product-item-badges"><span class="discount">-10%</span><span class="status unlike cursor-pointer"><i class="fas fa-heart"></i></span></div><a class="product-item-image" href="./product-detail-3.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/06/ghe-don-bora-xanh-3-1575622610.jpg" alt="Product Image"/></a>
-                    </div>
-                    <div class="product-item-body mt-1">
-                      <div class="product-item-slider owl-carousel owl-carousel-2">
-                        <div class="thumbnail-item active"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/06/ghe-don-bora-xanh-3-1575622610.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/09/ghe-don-bora-xanh-2-1575877209.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/09/ghe-don-bora-xanh-1-1575877213.jpg" alt="Product Image"/></div>
-                      </div>
-                      <div class="product-item-info px-3 pb-3 pt-2"><a class="cursor-pointer" href="#">
-                          <h3 class="product-info-title">Ghế sofa đơn Bora</h3></a>
-                        <div class="d-flex justify-content-between align-items-center pt-3">
-                          <div class="product-stars-rating"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(30)</span></div>
-                          <div class="product-location">Hồ Chí Minh    </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-item-footer d-flex justify-content-between align-items-center px-3 py-1">
-                      <div class="product-price">
-                        <p class="m-0 current-price">5,790,000 VND</p>
-                        <p class="m-0 old-price">6,220,000 VND</p>
-                      </div>
-                      <div class="product-provider"><a href="./store-homepage-1.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png" alt=""/></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">   
-                  <div class="product-item my-3 bg-white">
-                    <div class="product-item-header">
-                      <div class="product-item-badges"><span class="discount">-10%</span><span class="status unlike cursor-pointer"><i class="fas fa-heart"></i></span></div><a class="product-item-image" href="./product-detail-9.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/29/zen-1575025514.jpg" alt="Product Image"/></a>
-                    </div>
-                    <div class="product-item-body mt-1">
-                      <div class="product-item-slider owl-carousel owl-carousel-2">
-                        <div class="thumbnail-item active"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/29/zen-1575025514.jpg" alt="Product Image"/></div>
-                      </div>
-                      <div class="product-item-info px-3 pb-3 pt-2"><a class="cursor-pointer" href="#">
-                          <h3 class="product-info-title">Giường Zen Sồi - 1m6</h3></a>
-                        <div class="d-flex justify-content-between align-items-center pt-3">
-                          <div class="product-stars-rating"><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating"></span></div>
-                          <div class="product-location">Hồ Chí Minh    </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-item-footer d-flex justify-content-between align-items-center px-3 py-1">
-                      <div class="product-price">
-                        <p class="m-0 current-price">26,910,000 VND</p>
-                        <p class="m-0 old-price">29,900,000 VND</p>
-                      </div>
-                      <div class="product-provider"><a href="./store-homepage-1.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png" alt=""/></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-xl-3">   
-                  <div class="product-item my-3 bg-white">
-                    <div class="product-item-header">
-                      <div class="product-item-badges"><span class="discount"> </span><span class="status unlike cursor-pointer"><i class="fas fa-heart"></i></span></div><a class="product-item-image" href="./product-detail-14.html"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/10/21/jysk-bed-vedde0000-1571632207.jpg" alt="Product Image"/></a>
-                    </div>
-                    <div class="product-item-body mt-1">
-                      <div class="product-item-slider owl-carousel owl-carousel-2">
-                        <div class="thumbnail-item active"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/10/21/jysk-bed-vedde0000-1571632207.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/10/21/jysk-bed-vedde0008-1571632212.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/10/21/jysk-bed-vedde0018-1571632219.jpg" alt="Product Image"/></div>
-                        <div class="thumbnail-item"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/10/21/jysk-bed-vedde0051-1571632223.jpg" alt="Product Image"/></div>
-                      </div>
-                      <div class="product-item-info px-3 pb-3 pt-2"><a class="cursor-pointer" href="#">
-                          <h3 class="product-info-title">Giường Vedde</h3></a>
-                        <div class="d-flex justify-content-between align-items-center pt-3">
-                          <div class="product-stars-rating"><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span class="active"><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span class="count-rating">(60)</span></div>
-                          <div class="product-location">Hồ Chí Minh    </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-item-footer d-flex justify-content-between align-items-center px-3 py-1">
-                      <div class="product-price">
-                        <p class="m-0 current-price">9,500,000 VND</p>
-                      </div>
-                      <div class="product-provider"><a href="./store-homepage-1.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png" alt=""/></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
-      </main>
-      <section id="footer">
+      </section>
+      <section class="mt-5" id="footer">
         <div class="footer-content wrapper-footer">
           <div class="search"><img src="https://images.alphacoders.com/932/932536.jpg?fbclid=IwAR1l4A-dKaHghfmC3OeK22Op-Rn6qrnbhDGDaHcEEStc5UtHjvvmYLUDuZs"/>
             <div class="search-bar input-group">

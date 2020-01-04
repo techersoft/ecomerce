@@ -15,275 +15,162 @@
     <section class="offer-layout">
       <div class="offer-content-customer">
         <div class="bg-wrapper"></div>
-        <div class="bg-wrapper bg-wrapper-popup"></div>
-        <div id="customer-auction">
-          <div class="btn-show-list-details">
-            <button id="show-list-details"><i class="fas fa-stream"></i></button>
-          </div>
-          <div class="wrapper-content-customer">
-            <div class="auction-upload-btn">
-              <label class="btn btn-upload" for="upload">Thêm hình ảnh</label>
-              <input type="file" name="upload" id="upload" accept="image/*"/>
+        <div id="product-offer">
+          <div class="product-offer">
+            <div class="carousel-product">
+              <div class="product-offer-item custom-offer"><img src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg" alt=""/></div>
             </div>
-            <div class="auction-upload-image">
-              <div class="row mx-0">
-                <div class="images py-2"><img id="output" src="https://images.wallpaperscraft.com/image/living_room_dining_room_chairs_table_room_design_7335_1920x1080.jpg" alt=""/></div>
+            <div class="info-offer">
+              <div class="title">
+                <h3>Thông số kỹ thuật </h3>
               </div>
-            </div>
-            <div class="aution-form mt-3">
-              <form>
-                <div class="row mx-0">
-                  <div class="col-12 px-0">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="amount">Số lượng đặt hàng</label>
-                          <input class="form-control" type="number"/>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">       
-                        <div class="form-group">
-                          <label for="amount">Kích thước</label>
-                          <input class="form-control" type="text"/>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">   
-                        <div class="form-group">
-                          <label for="colors">Màu sắc</label>
-                          <select class="form-control">
-                            <option>Đen</option>
-                            <option>Đỏ</option>
-                            <option>Cam</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 px-0">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="amount">Chất liệu</label>
-                          <input class="form-control" type="text"/>
-                        </div>
-                      </div>
-                      <div class="col-lg-8">
-                        <div class="form-group">
-                          <label for="amount">Giá mong muốn</label>
-                          <div class="row mx-0">
-                            <div class="col-6 pl-0">
-                              <input class="form-control" type="number" placeholder="Từ"/>
-                            </div>
-                            <div class="col-6 pr-0">
-                              <input class="form-control" type="number" placeholder="Đến"/>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-100">
-                    <div class="form-group">
-                      <label for="amount">Mô tả</label>
-                      <textarea class="form-control" name="" cols="30" rows="3"></textarea>
-                    </div>
-                  </div>
-                  <div class="form-group text-right w-100 mt-3">
-                    <button class="btn btn-success"> Xác nhận</button>
-                    <button class="btn btn-cancel"> Hủy bỏ</button>
-                  </div>
+              <div class="info-detail row mx-0">
+                <div class="col-lg-4 col-sm-6">
+                  <div class="length p-3 mt-2 bg-white"><span>Chiều dài (m): </span><span class="pl-2">2,2</span></div>
                 </div>
-              </form>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="width p-3 mt-2 bg-white"><span>Chiều rộng (m): </span><span class="pl-2">1</span></div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="height p-3 mt-2 bg-white"><span>Chiều cao (m): </span><span class="pl-2">0,6</span></div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="weight p-3 mt-2 bg-white"><span>Cân nặng (kg): </span><span class="pl-2">80</span></div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="material p-3 mt-2 bg-white"><span>Chất liệu: </span><span class="pl-2">Gỗ</span></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="offer-content-list-supplier">
         <div class="wrapper-offer-supplier">
-          <div class="offer-supplier_header p-3">
-            <div class="offer-content-space-owner">
-              <div class="offer-content-space-owner_info-avatar"><a href="#"><img src="https://st.hzcdn.com/simgs/ee53d18f01071ab1_1-0081/_.jpg"/></a></div>
-              <div class="offer-content-space-owner_info-details ml-3">
-                <div class="space-owner_info-details_name"><a href="#" style="font-weight:600">Trung Hiếu</a></div>
-                <div class="space-owner_info-details_info"><a href="#" style="font-weight:600">Cập nhật thông tin</a></div>
+          <div class="offer-content-box p-2 position-relative">
+            <h3>Danh sách nhà cung cấp</h3>
+            <div class="offer-cancel"><a class="close" href="./index.html"><i class="fas fa-home"></i></a></div>
+          </div>
+          <div class="btn-auction px-3 pt-3 text-right">
+            <button>Đấu giá</button>
+          </div>
+          <div class="offer-content-box px-3 pt-3 pb-0 offer-order">
+            <div class="box-list-order box-list-order-hover" id="btn-popup-dongnhan">
+              <div class="img-list"><img src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg" alt=""/></div>
+              <div class="title-list"><a class="img-order" href="#"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png" alt=""/></a>
+                <div class="price"><span>Giá : <span>9,500,000 đ</span></span></div>
+              </div>
+            </div>
+            <div class="box-list-order my-2 box-list-order-hover" id="btn-popup-relax">
+              <div class="img-list"><img src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg" alt=""/></div>
+              <div class="title-list"><a class="img-order" href="#"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/10/25/relax-art-1571993027.png" alt=""/></a>
+                <div class="price"><span>Giá : <span>9,500,000 đ</span></span></div>
+              </div>
+            </div>
+            <div class="box-list-order my-2 box-list-order-hover" id="btn-popup-furnist">
+              <div class="img-list"><img src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg" alt=""/></div>
+              <div class="title-list"><a class="img-order" href="#"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png" alt=""/></a>
+                <div class="price"><span>Giá : <span>9,500,000 đ</span></span></div>
               </div>
             </div>
           </div>
-          <div class="offer-supplier_header-title d-flex text-center px-3 py-2"><i class="fas fa-th-list"></i>
-            <h2 class="ml-2">Danh sách nhà cung cấp</h2>
+          <div class="offer-content-box px-3 pt-3">
+            <div class="offer-content-space-rel-prod" id="tag">
+              <div class="concept_title">
+                <h2>Sản phẩm liên quan</h2>
+              </div>
+              <div class="space-rel-prod_photo">
+                <div class="space-rel-prod_photo_img my-2">
+                  <div class="row m-0">
+                    <div class="box-img px-1 mb-2 col-3"><a href="./product-detail-10.html">
+                        <div class="img_responsive"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/27/jysk-bed-362090286-millinge-0000-1574838367.jpg"/></div>
+                        <div class="space-price text-center d-block"><span>$69</span></div></a></div>
+                    <div class="box-img px-1 mb-2 col-3"><a href="./product-detail-8.html">
+                        <div class="img_responsive"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/12/25/mmh-bed-qun-lullaby-grey-gi00000001-13-1577246922.jpg"/></div>
+                        <div class="space-price text-center d-block"><span>$69</span></div></a></div>
+                    <div class="box-img px-1 mb-2 col-3"><a href="./product-detail-11.html">
+                        <div class="img_responsive"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/11/26/jysk-bed-edith-0000-1574740463.jpg"/></div>
+                        <div class="space-price text-center d-block"><span>$124</span></div></a></div>
+                    <div class="box-img px-1 mb-2 col-3"><a href="./product-detail-13.html">
+                        <div class="img_responsive"><img src="https://cdn.fitin.vn/cms-ecom/thumbs/700x700/images/2019/08/27/fullhouse-bed-provedence-0000-1566901590.jpg"/></div>
+                        <div class="space-price text-center d-block"><span>$32</span></div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="offer-supplier_list-content">
-            <div class="offer_list_item px-3 py-2">
-              <div class="box-list_info">
-                <div class="list_item_img"><img src="https://salaciadecor.com/wp-content/uploads/2019/05/ban-tra-go-tu-nhien.jpg2_-1021x1024.jpg"/></div>
-                <div class="list_item_info">
-                  <div class="item_info" name="name">
-                    <p>Tên sản phẩm:</p><span>Bàn gỗ tròn</span>
-                  </div>
-                  <div class="item_info" name="price">
-                    <p>Giá :</p><span>7.000.000<sup>đ</sup></span>
-                  </div>
-                  <div class="item_info"><a class="supplier_logo" href="./store-homepage.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png"/></a></div>
-                </div>
+          <div class="offer-content-box px-3 pt-3">
+            <div class="offer-content-comment-question" id="question">
+              <div class="concept_title">
+                <h2>Câu hỏi về bức ảnh này (25)</h2>
               </div>
-              <div class="widget-see-details text-right">
-                <button class="btn-see-details">Xem chi tiết</button>
-                <div class="details-supplier text-left">
-                  <div class="details-supplier_title p-3"><a class="supplier_logo" href="./store-homepage.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png"/></a>
-                    <h2>Công ty ABCD</h2>
-                  </div>
-                  <div class="details-supplier-content px-3 py-2">
-                    <div class="item_info">
-                      <p>Tên sản phẩm:</p><span class="ml-1">Bàn gỗ tròn</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Giá:</p><span class="ml-1">7.000.000</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Số lượng đặt tối thiểu:</p><span class="ml-1">1</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Thời gian giao hàng:</p><span class="ml-1"></span>
-                    </div>
-                    <div class="item_info">
-                      <p>DH:</p><span class="ml-1"></span>
-                    </div>
-                    <div class="item_info">
-                      <p>Mô tả chi tiết:</p><span class="ml-1"></span>
-                    </div>
-                  </div>
-                  <button class="btn-close-details-supplier">ĐÓNG</button>
+              <div class="comment-question my-3">
+                <div class="btn-cmt-quest">
+                  <button class="btn_cmt-quest">Hỏi Đáp</button>
                 </div>
+                <div class="notification-cmt-quest my-1"><span>Có bất kì câu hỏi nào về ảnh? Nhắn tin hỏi tại đây.</span></div>
               </div>
             </div>
-            <div class="offer_list_item px-3 py-2">
-              <div class="box-list_info">
-                <div class="list_item_img"><img src="http://kientrucdsd.com/admincp/db/uploads/149612896510.jpg"/></div>
-                <div class="list_item_info">
-                  <div class="item_info" name="name">
-                    <p>Tên sản phẩm:</p><span>Bàn Ăn Gỗ Sồi</span>
-                  </div>
-                  <div class="item_info" name="price">
-                    <p>Giá :</p><span>1.500.000<sup>đ</sup></span>
-                  </div>
-                  <div class="item_info"><a class="supplier_logo" href="./store-homepage.html"><img src="http://velogo.net/wp-content/uploads/2016/07/thiet-ke-logo-baoviet-1.jpg"/></a></div>
-                </div>
-              </div>
-              <div class="widget-see-details text-right">
-                <button class="btn-see-details">Xem chi tiết</button>
-                <div class="details-supplier text-left">
-                  <div class="details-supplier_title p-3"><a class="supplier_logo" href="./store-homepage.html"><img src="http://velogo.net/wp-content/uploads/2016/07/thiet-ke-logo-baoviet-1.jpg"/></a>
-                    <h2>Công ty EFGH</h2>
-                  </div>
-                  <div class="details-supplier-content px-3 py-2">
-                    <div class="item_info">
-                      <p>Tên sản phẩm:</p><span class="ml-1">Bàn Ăn Gỗ Sồi</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Giá:</p><span class="ml-1">1.500.000</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Số lượng đặt tối thiểu:</p><span class="ml-1">3</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Thời gian giao hàng:</p><span class="ml-1"></span>
-                    </div>
-                    <div class="item_info">
-                      <p>DH:</p><span class="ml-1"></span>
-                    </div>
-                    <div class="item_info">
-                      <p>Mô tả chi tiết:</p><span class="ml-1"></span>
-                    </div>
-                  </div>
-                  <button class="btn-close-details-supplier">ĐÓNG</button>
-                </div>
+          </div>
+          <div class="btn-close-menu-offer"><span>Đóng</span></div>
+        </div>
+        <div class="d-none" id="popup-dongnhan">
+          <div class="bg-popup"></div>
+          <div class="popup-control">
+            <div class="btn-cancel-popup" id="btn-cancel-popup-dongnhan">X</div>
+            <div class="box-list-order">
+              <div class="img-list custom-img"><img src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg" alt=""/></div>
+              <div class="title-list"><a class="img-order img-order-custom" href="#"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png" alt=""/></a>
+                <div class="price ml-1"><span>Giá : <span>9,500,000 đ</span></span></div>
               </div>
             </div>
-            <div class="offer_list_item px-3 py-2">
-              <div class="box-list_info">
-                <div class="list_item_img"><img src="http://product.hstatic.net/1000208812/product/upload_60f1764c63614dc9908c88965212a412_master.jpg"/></div>
-                <div class="list_item_info">
-                  <div class="item_info" name="name">
-                    <p>Tên sản phẩm:</p><span>Bàn Tròn Nhỏ</span>
-                  </div>
-                  <div class="item_info" name="price">
-                    <p>Giá :</p><span>500.000<sup>đ</sup></span>
-                  </div>
-                  <div class="item_info"><a class="supplier_logo" href="./store-homepage.html"><img src="https://brasol.vn/wp-content/uploads/2016/03/brasol.vn_brasol.vn-thiet-ke-logo-bo-nhan-dien-thuong-hieu-cong-ty-son-thai-25.jpg"/></a></div>
-                </div>
-              </div>
-              <div class="widget-see-details text-right">
-                <button class="btn-see-details">Xem chi tiết</button>
-                <div class="details-supplier text-left">
-                  <div class="details-supplier_title p-3"><a class="supplier_logo" href="./store-homepage.html"><img src="https://brasol.vn/wp-content/uploads/2016/03/brasol.vn_brasol.vn-thiet-ke-logo-bo-nhan-dien-thuong-hieu-cong-ty-son-thai-25.jpg"/></a>
-                    <h2>Công ty DCBA</h2>
-                  </div>
-                  <div class="details-supplier-content px-3 py-2">
-                    <div class="item_info">
-                      <p>Tên sản phẩm:</p><span class="ml-1">Bàn Tròn Nhỏ</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Giá:</p><span class="ml-1">500.000</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Số lượng đặt tối thiểu:</p><span class="ml-1">5</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Thời gian giao hàng:</p><span class="ml-1"></span>
-                    </div>
-                    <div class="item_info">
-                      <p>DH:</p><span class="ml-1"></span>
-                    </div>
-                    <div class="item_info">
-                      <p>Mô tả chi tiết:</p><span class="ml-1"></span>
-                    </div>
-                  </div>
-                  <button class="btn-close-details-supplier">ĐÓNG</button>
-                </div>
+            <div class="describe">
+              <h5>Mô tả : </h5><span>Phòng ngủ cao cấp đầy đủ tiện nghi, với cách trang trí hiện đại phù hợp với những người khó ngủ.</span>
+            </div>
+            <div class="btn-group-control">
+              <button class="btn-deal btn btn-success">Deal</button>
+              <button class="btn-call btn btn-primary">Call</button>
+              <button class="btn-chat btn btn-dark">Chat</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-none" id="popup-relax">
+          <div class="bg-popup"></div>
+          <div class="popup-control">
+            <div class="btn-cancel-popup" id="btn-cancel-popup-relax">X</div>
+            <div class="box-list-order">
+              <div class="img-list custom-img"><img src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg" alt=""/></div>
+              <div class="title-list"><a class="img-order img-order-custom" href="#"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/10/25/relax-art-1571993027.png" alt=""/></a>
+                <div class="price ml-1"><span>Giá : <span>9,500,000 đ</span></span></div>
               </div>
             </div>
-            <div class="offer_list_item px-3 py-2">
-              <div class="box-list_info">
-                <div class="list_item_img"><img src="https://bizweb.dktcdn.net/100/215/341/files/72803428-1176787489180861-580959971064152064-n.jpg?v=1572242632886"/></div>
-                <div class="list_item_info">
-                  <div class="item_info" name="name">
-                    <p>Tên sản phẩm:</p><span>Bàn Gỗ Phong Thủy</span>
-                  </div>
-                  <div class="item_info" name="price">
-                    <p>Giá :</p><span>2.800.000<sup>đ</sup></span>
-                  </div>
-                  <div class="item_info"><a class="supplier_logo" href="./store-homepage.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png"/></a></div>
-                </div>
+            <div class="describe">
+              <h5>Mô tả : </h5><span>Phòng ngủ cao cấp đầy đủ tiện nghi, với cách trang trí hiện đại phù hợp với những người khó ngủ.</span>
+            </div>
+            <div class="btn-group-control">
+              <button class="btn-deal btn btn-success">Deal</button>
+              <button class="btn-call btn btn-primary">Call</button>
+              <button class="btn-chat btn btn-dark">Chat</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-none" id="popup-furnist">
+          <div class="bg-popup"></div>
+          <div class="popup-control">
+            <div class="btn-cancel-popup" id="btn-cancel-popup-furnist">X</div>
+            <div class="box-list-order">
+              <div class="img-list custom-img"><img src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg" alt=""/></div>
+              <div class="title-list"><a class="img-order img-order-custom" href="#"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png" alt=""/></a>
+                <div class="price ml-1"><span>Giá : <span>9,500,000 đ</span></span></div>
               </div>
-              <div class="widget-see-details text-right">
-                <button class="btn-see-details">Xem chi tiết</button>
-                <div class="details-supplier text-left">
-                  <div class="details-supplier_title p-3"><a class="supplier_logo" href="./store-homepage.html"><img src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png"/></a>
-                    <h2>Công ty ABCD</h2>
-                  </div>
-                  <div class="details-supplier-content px-3 py-2">
-                    <div class="item_info">
-                      <p>Tên sản phẩm:</p><span class="ml-1">Bàn Gỗ Phong Thủy</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Giá:</p><span class="ml-1">2.800.000</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Số lượng đặt tối thiểu:</p><span class="ml-1">2</span>
-                    </div>
-                    <div class="item_info">
-                      <p>Thời gian giao hàng:</p><span class="ml-1"></span>
-                    </div>
-                    <div class="item_info">
-                      <p>DH:</p><span class="ml-1"></span>
-                    </div>
-                    <div class="item_info">
-                      <p>Mô tả chi tiết:</p><span class="ml-1"></span>
-                    </div>
-                  </div>
-                  <button class="btn-close-details-supplier">ĐÓNG</button>
-                </div>
-              </div>
+            </div>
+            <div class="describe">
+              <h5>Mô tả : </h5><span>Phòng ngủ cao cấp đầy đủ tiện nghi, với cách trang trí hiện đại phù hợp với những người khó ngủ.</span>
+            </div>
+            <div class="btn-group-control">
+              <button class="btn-deal btn btn-success">Deal</button>
+              <button class="btn-call btn btn-primary">Call</button>
+              <button class="btn-chat btn btn-dark">Chat</button>
             </div>
           </div>
         </div>

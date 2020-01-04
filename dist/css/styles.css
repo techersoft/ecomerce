@@ -1226,7 +1226,7 @@ input {
   -o-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-#product-concept .product-concept {
+#product-concept .product-concept, #product-concept .product-offer, #product-offer .product-concept, #product-offer .product-offer {
   position: absolute;
   left: 0;
   right: 0;
@@ -1235,7 +1235,7 @@ input {
   height: 100vh;
   width: 100%;
   background-color: #f4f4f4; }
-  #product-concept .product-concept .carousel-product {
+  #product-concept .product-concept .carousel-product, #product-concept .product-offer .carousel-product, #product-offer .product-concept .carousel-product, #product-offer .product-offer .carousel-product {
     max-height: 100vh;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1255,15 +1255,15 @@ input {
     -o-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease; }
-    #product-concept .product-concept .carousel-product .product-concept-item {
+    #product-concept .product-concept .carousel-product .product-concept-item, #product-concept .product-concept .carousel-product .product-offer-item, #product-concept .product-offer .carousel-product .product-concept-item, #product-concept .product-offer .carousel-product .product-offer-item, #product-offer .product-concept .carousel-product .product-concept-item, #product-offer .product-concept .carousel-product .product-offer-item, #product-offer .product-offer .carousel-product .product-concept-item, #product-offer .product-offer .carousel-product .product-offer-item {
       position: relative;
       width: 100%; }
-      #product-concept .product-concept .carousel-product .product-concept-item img {
+      #product-concept .product-concept .carousel-product .product-concept-item img, #product-concept .product-concept .carousel-product .product-offer-item img, #product-concept .product-offer .carousel-product .product-concept-item img, #product-concept .product-offer .carousel-product .product-offer-item img, #product-offer .product-concept .carousel-product .product-concept-item img, #product-offer .product-concept .carousel-product .product-offer-item img, #product-offer .product-offer .carousel-product .product-concept-item img, #product-offer .product-offer .carousel-product .product-offer-item img {
         width: 100%;
         display: block;
         min-width: 500px;
         min-height: 300px; }
-    #product-concept .product-concept .carousel-product .btn-group-contacts {
+    #product-concept .product-concept .carousel-product .btn-group-contacts, #product-concept .product-offer .carousel-product .btn-group-contacts, #product-offer .product-concept .carousel-product .btn-group-contacts, #product-offer .product-offer .carousel-product .btn-group-contacts {
       position: absolute;
       display: -webkit-box;
       display: -webkit-flex;
@@ -1277,7 +1277,7 @@ input {
       -ms-flex-pack: center;
       justify-content: center;
       bottom: 50px; }
-      #product-concept .product-concept .carousel-product .btn-group-contacts .btn {
+      #product-concept .product-concept .carousel-product .btn-group-contacts .btn, #product-concept .product-offer .carousel-product .btn-group-contacts .btn, #product-offer .product-concept .carousel-product .btn-group-contacts .btn, #product-offer .product-offer .carousel-product .btn-group-contacts .btn {
         background-color: #fff !important;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -1286,11 +1286,14 @@ input {
         -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35) !important;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35) !important; }
       #product-concept .product-concept .carousel-product .btn-group-contacts .btn-email,
-      #product-concept .product-concept .carousel-product .btn-group-contacts .btn-save {
+      #product-concept .product-concept .carousel-product .btn-group-contacts .btn-save, #product-concept .product-offer .carousel-product .btn-group-contacts .btn-email,
+      #product-concept .product-offer .carousel-product .btn-group-contacts .btn-save, #product-offer .product-concept .carousel-product .btn-group-contacts .btn-email,
+      #product-offer .product-concept .carousel-product .btn-group-contacts .btn-save, #product-offer .product-offer .carousel-product .btn-group-contacts .btn-email,
+      #product-offer .product-offer .carousel-product .btn-group-contacts .btn-save {
         min-width: 90px;
         font-family: sans-serif;
         font-weight: 600; }
-      #product-concept .product-concept .carousel-product .btn-group-contacts .btn-show {
+      #product-concept .product-concept .carousel-product .btn-group-contacts .btn-show, #product-concept .product-offer .carousel-product .btn-group-contacts .btn-show, #product-offer .product-concept .carousel-product .btn-group-contacts .btn-show, #product-offer .product-offer .carousel-product .btn-group-contacts .btn-show {
         position: absolute;
         right: 30px;
         width: 35px;
@@ -1310,7 +1313,7 @@ input {
         -moz-box-align: center;
         -ms-flex-align: center;
         align-items: center; }
-  #product-concept .product-concept .show-more-product {
+  #product-concept .product-concept .show-more-product, #product-concept .product-offer .show-more-product, #product-offer .product-concept .show-more-product, #product-offer .product-offer .show-more-product {
     pointer-events: auto !important;
     opacity: 1 !important;
     bottom: 0 !important;
@@ -1319,7 +1322,7 @@ input {
     -o-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease; }
-  #product-concept .product-concept .more-product {
+  #product-concept .product-concept .more-product, #product-concept .product-concept .more-product-offer, #product-concept .product-offer .more-product, #product-concept .product-offer .more-product-offer, #product-offer .product-concept .more-product, #product-offer .product-concept .more-product-offer, #product-offer .product-offer .more-product, #product-offer .product-offer .more-product-offer {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -1332,28 +1335,28 @@ input {
     -o-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease; }
-    #product-concept .product-concept .more-product .hide-product {
+    #product-concept .product-concept .more-product .hide-product, #product-concept .product-concept .more-product-offer .hide-product, #product-concept .product-offer .more-product .hide-product, #product-concept .product-offer .more-product-offer .hide-product, #product-offer .product-concept .more-product .hide-product, #product-offer .product-concept .more-product-offer .hide-product, #product-offer .product-offer .more-product .hide-product, #product-offer .product-offer .more-product-offer .hide-product {
       position: absolute;
       bottom: 100%;
       right: 50px;
       background-color: #fff;
       font-size: 14px;
       cursor: pointer; }
-      #product-concept .product-concept .more-product .hide-product::before {
+      #product-concept .product-concept .more-product .hide-product::before, #product-concept .product-concept .more-product-offer .hide-product::before, #product-concept .product-offer .more-product .hide-product::before, #product-concept .product-offer .more-product-offer .hide-product::before, #product-offer .product-concept .more-product .hide-product::before, #product-offer .product-concept .more-product-offer .hide-product::before, #product-offer .product-offer .more-product .hide-product::before, #product-offer .product-offer .more-product-offer .hide-product::before {
         content: '';
         position: absolute;
         border-style: solid;
         border-color: transparent white;
         border-width: 22px 15px 5px 0;
         right: 100%; }
-      #product-concept .product-concept .more-product .hide-product::after {
+      #product-concept .product-concept .more-product .hide-product::after, #product-concept .product-concept .more-product-offer .hide-product::after, #product-concept .product-offer .more-product .hide-product::after, #product-concept .product-offer .more-product-offer .hide-product::after, #product-offer .product-concept .more-product .hide-product::after, #product-offer .product-concept .more-product-offer .hide-product::after, #product-offer .product-offer .more-product .hide-product::after, #product-offer .product-offer .more-product-offer .hide-product::after {
         content: '';
         position: absolute;
         border-style: solid;
         border-color: transparent white;
         border-width: 22px 0px 5px 15px;
         left: 100%; }
-    #product-concept .product-concept .more-product .list-items-concept {
+    #product-concept .product-concept .more-product .list-items-concept, #product-concept .product-concept .more-product .list-items-offer, #product-concept .product-concept .more-product-offer .list-items-concept, #product-concept .product-concept .more-product-offer .list-items-offer, #product-concept .product-offer .more-product .list-items-concept, #product-concept .product-offer .more-product .list-items-offer, #product-concept .product-offer .more-product-offer .list-items-concept, #product-concept .product-offer .more-product-offer .list-items-offer, #product-offer .product-concept .more-product .list-items-concept, #product-offer .product-concept .more-product .list-items-offer, #product-offer .product-concept .more-product-offer .list-items-concept, #product-offer .product-concept .more-product-offer .list-items-offer, #product-offer .product-offer .more-product .list-items-concept, #product-offer .product-offer .more-product .list-items-offer, #product-offer .product-offer .more-product-offer .list-items-concept, #product-offer .product-offer .more-product-offer .list-items-offer {
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-box;
@@ -1365,27 +1368,27 @@ input {
       -moz-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      #product-concept .product-concept .more-product .list-items-concept .box-item-concept {
+      #product-concept .product-concept .more-product .list-items-concept .box-item-concept, #product-concept .product-concept .more-product .list-items-concept .box-item-offer, #product-concept .product-concept .more-product .list-items-offer .box-item-concept, #product-concept .product-concept .more-product .list-items-offer .box-item-offer, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer, #product-concept .product-offer .more-product .list-items-concept .box-item-concept, #product-concept .product-offer .more-product .list-items-concept .box-item-offer, #product-concept .product-offer .more-product .list-items-offer .box-item-concept, #product-concept .product-offer .more-product .list-items-offer .box-item-offer, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer, #product-offer .product-concept .more-product .list-items-concept .box-item-concept, #product-offer .product-concept .more-product .list-items-concept .box-item-offer, #product-offer .product-concept .more-product .list-items-offer .box-item-concept, #product-offer .product-concept .more-product .list-items-offer .box-item-offer, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer, #product-offer .product-offer .more-product .list-items-concept .box-item-concept, #product-offer .product-offer .more-product .list-items-concept .box-item-offer, #product-offer .product-offer .more-product .list-items-offer .box-item-concept, #product-offer .product-offer .more-product .list-items-offer .box-item-offer, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer {
         color: #333;
         position: relative;
         width: 120px;
         height: 100%; }
-        #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item {
+        #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item {
           position: absolute;
           bottom: 0;
           background: #fff;
           left: 0;
           padding: 15px 17px;
           cursor: default; }
-          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item h5 {
+          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item h5, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item h5, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item h5, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item h5, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item h5, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item h5, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item h5, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item h5, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item h5, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item h5, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item h5, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item h5, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item h5, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item h5, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item h5, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item h5, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item h5, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item h5, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item h5, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item h5, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item h5, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item h5, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item h5, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item h5, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item h5, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item h5, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item h5, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item h5, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item h5, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item h5, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item h5, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item h5 {
             font-weight: bold;
             padding-bottom: 3px;
             display: none; }
-          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item img {
+          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item img, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item img, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item img, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item img, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item img, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item img, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item img, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item img, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item img, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item img, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item img, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item img, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item img, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item img, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item img, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item img, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item img, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item img, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item img, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item img, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item img, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item img, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item img, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item img, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item img, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item img, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item img, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item img, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item img, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item img, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item img, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item img {
             width: 100%;
             height: 90px;
             display: block; }
-          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item p {
+          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item p, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item p, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item p, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item p, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item p, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item p, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item p, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item p, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item p, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item p, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item p, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item p, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item p, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item p, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item p, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item p, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item p, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item p, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item p, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item p, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item p, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item p, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item p, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item p, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item p, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item p, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item p, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item p, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item p, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item p, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item p, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item p {
             white-space: nowrap;
             overflow: hidden;
             -o-text-overflow: ellipsis;
@@ -1393,17 +1396,17 @@ input {
             width: 120px;
             font-size: 14px;
             display: none; }
-          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item span {
+          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item span, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item span, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item span, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item span, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item span, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item span, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item span, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item span, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item span, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item span, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item span, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item span, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item span, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item span, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item span, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item span, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item span, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item span, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item span, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item span, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item span, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item span, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item span, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item span, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item span, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item span, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item span, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item span, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item span, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item span, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item span, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item span {
             font-weight: bold;
             display: block;
             text-align: center; }
-            #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item span i {
+            #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item span i, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item span i, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item span i, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item span i, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item span i, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item span i, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item span i, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item span i, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item span i, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item span i, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item span i, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item span i, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item span i, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item span i, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item span i, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item span i, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item span i, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item span i, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item span i, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item span i, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item span i, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item span i, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item span i, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item span i, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item span i, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item span i, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item span i, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item span i, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item span i, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item span i, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item span i, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item span i {
               display: none;
               margin-left: 5px;
               font-size: 14px; }
-              #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item span i::before {
+              #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item span i::before, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item span i::before, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item span i::before, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item span i::before, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item span i::before, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item span i::before, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item span i::before, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item span i::before, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item span i::before, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item span i::before, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item span i::before, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item span i::before, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item span i::before, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item span i::before, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item span i::before, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item span i::before, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item span i::before, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item span i::before, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item span i::before, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item span i::before, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item span i::before, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item span i::before, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item span i::before, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item span i::before, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item span i::before, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item span i::before, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item span i::before, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item span i::before, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item span i::before, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item span i::before, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item span i::before, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item span i::before {
                 color: #4dbc15; }
-          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item a {
+          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item a, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item a, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item a, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item a, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item a, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item a, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item a, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item a, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item a, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item a, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item a, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item a, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item a, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item a, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item a, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item a, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item a, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item a, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item a, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item a, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item a, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item a, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item a, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item a, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item a, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item a, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item a, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item a, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item a, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item a, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item a, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item a {
             height: 40px;
             width: 100%;
             font-size: 16px;
@@ -1414,7 +1417,7 @@ input {
             background-color: #4dbc15;
             border-color: #4dbc15;
             display: none; }
-          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover {
+          #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover {
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             border-radius: 3px;
@@ -1424,16 +1427,16 @@ input {
             bottom: 5px;
             z-index: 111;
             padding: 20px; }
-            #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover h5, #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover p, #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover a {
+            #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover h5, #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover p, #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover a, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover h5, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover p, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover a, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover h5, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover p, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover a, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover h5, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover p, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover a, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover h5, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover p, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover a, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover h5, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover p, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover a, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover h5, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover p, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover a, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover h5, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover p, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover a, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover h5, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover p, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover a, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover h5, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover p, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover a, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover h5, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover p, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover a, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover h5, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover p, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover a, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover h5, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover p, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover a, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover h5, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover p, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover a, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover h5, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover p, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover a, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover h5, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover p, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover a, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover h5, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover p, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover a, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover h5, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover p, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover a, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover h5, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover p, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover a, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover h5, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover p, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover a, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover h5, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover p, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover a, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover h5, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover p, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover a, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover h5, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover p, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover a, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover h5, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover p, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover a, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover h5, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover p, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover a, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover h5, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover p, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover a, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover h5, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover p, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover a, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover h5, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover p, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover a, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover h5, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover p, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover a, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover h5, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover p, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover a, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover h5, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover p, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover a, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover h5, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover p, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover a {
               display: block; }
-            #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover i {
+            #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover i, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover i, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover i, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover i, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover i, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover i, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover i, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover i, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover i, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover i, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover i, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover i, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover i, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover i, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover i, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover i, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover i, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover i, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover i, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover i, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover i, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover i, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover i, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover i, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover i, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover i, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover i, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover i, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover i, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover i, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover i, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover i {
               display: inline-block; }
-            #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover span {
+            #product-concept .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover span, #product-concept .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover span, #product-concept .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover span, #product-concept .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover span, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover span, #product-concept .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover span, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover span, #product-concept .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover span, #product-concept .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover span, #product-concept .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover span, #product-concept .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover span, #product-concept .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover span, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover span, #product-concept .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover span, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover span, #product-concept .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover span, #product-offer .product-concept .more-product .list-items-concept .box-item-concept .box-item:hover span, #product-offer .product-concept .more-product .list-items-concept .box-item-offer .box-item:hover span, #product-offer .product-concept .more-product .list-items-offer .box-item-concept .box-item:hover span, #product-offer .product-concept .more-product .list-items-offer .box-item-offer .box-item:hover span, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-concept .box-item:hover span, #product-offer .product-concept .more-product-offer .list-items-concept .box-item-offer .box-item:hover span, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-concept .box-item:hover span, #product-offer .product-concept .more-product-offer .list-items-offer .box-item-offer .box-item:hover span, #product-offer .product-offer .more-product .list-items-concept .box-item-concept .box-item:hover span, #product-offer .product-offer .more-product .list-items-concept .box-item-offer .box-item:hover span, #product-offer .product-offer .more-product .list-items-offer .box-item-concept .box-item:hover span, #product-offer .product-offer .more-product .list-items-offer .box-item-offer .box-item:hover span, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-concept .box-item:hover span, #product-offer .product-offer .more-product-offer .list-items-concept .box-item-offer .box-item:hover span, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-concept .box-item:hover span, #product-offer .product-offer .more-product-offer .list-items-offer .box-item-offer .box-item:hover span {
               text-align: left;
               display: inline-block;
               color: #4dbc15;
               padding: 5px 0; }
-    #product-concept .product-concept .more-product .shop-more {
+    #product-concept .product-concept .more-product .shop-more, #product-concept .product-concept .more-product-offer .shop-more, #product-concept .product-offer .more-product .shop-more, #product-concept .product-offer .more-product-offer .shop-more, #product-offer .product-concept .more-product .shop-more, #product-offer .product-concept .more-product-offer .shop-more, #product-offer .product-offer .more-product .shop-more, #product-offer .product-offer .more-product-offer .shop-more {
       position: absolute;
       top: 50px;
       right: 15px;
@@ -2796,7 +2799,7 @@ input {
   display: -ms-flexbox;
   display: flex; }
 
-.menu-concept {
+.menu-concept, .menu-offer {
   position: fixed;
   right: 0;
   width: 420px;
@@ -2811,30 +2814,30 @@ input {
   -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #f4f4f4; }
-  .menu-concept .left-menu, .menu-concept .right-menu {
+  .menu-concept .left-menu, .menu-concept .right-menu, .menu-offer .left-menu, .menu-offer .right-menu {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex; }
-    .menu-concept .left-menu a, .menu-concept .right-menu a {
+    .menu-concept .left-menu a, .menu-concept .right-menu a, .menu-offer .left-menu a, .menu-offer .right-menu a {
       padding: 10px 15px; }
-      .menu-concept .left-menu a:hover i, .menu-concept .right-menu a:hover i {
+      .menu-concept .left-menu a:hover i, .menu-concept .right-menu a:hover i, .menu-offer .left-menu a:hover i, .menu-offer .right-menu a:hover i {
         color: #333; }
-  .menu-concept .left-menu a {
+  .menu-concept .left-menu a, .menu-offer .left-menu a {
     border-top: 3px solid transparent; }
-    .menu-concept .left-menu a:active, .menu-concept .left-menu a:focus {
+    .menu-concept .left-menu a:active, .menu-concept .left-menu a:focus, .menu-offer .left-menu a:active, .menu-offer .left-menu a:focus {
       background-color: #fff;
       border-top: 3px solid green;
       -webkit-box-shadow: 2px -1px 1px rgba(0, 0, 0, 0.08), -2px -1px 1px rgba(0, 0, 0, 0.08);
       -moz-box-shadow: 2px -1px 1px rgba(0, 0, 0, 0.08), -2px -1px 1px rgba(0, 0, 0, 0.08);
       box-shadow: 2px -1px 1px rgba(0, 0, 0, 0.08), -2px -1px 1px rgba(0, 0, 0, 0.08); }
-  .menu-concept .right-menu a {
+  .menu-concept .right-menu a, .menu-offer .right-menu a {
     position: relative;
     height: 100%; }
-    .menu-concept .right-menu a:hover {
+    .menu-concept .right-menu a:hover, .menu-offer .right-menu a:hover {
       background-color: #ccc; }
-    .menu-concept .right-menu a span {
+    .menu-concept .right-menu a span, .menu-offer .right-menu a span {
       position: absolute;
       top: 5px;
       right: 5px;
@@ -2861,15 +2864,15 @@ input {
       -ms-flex-pack: center;
       justify-content: center;
       color: #fff; }
-  .menu-concept .right-menu .close {
+  .menu-concept .right-menu .close, .menu-offer .right-menu .close {
     background-color: #222; }
-    .menu-concept .right-menu .close i {
+    .menu-concept .right-menu .close i, .menu-offer .right-menu .close i {
       font-size: 18px; }
-      .menu-concept .right-menu .close i::before {
+      .menu-concept .right-menu .close i::before, .menu-offer .right-menu .close i::before {
         color: white; }
-    .menu-concept .right-menu .close:hover {
+    .menu-concept .right-menu .close:hover, .menu-offer .right-menu .close:hover {
       background: #000; }
-  .menu-concept .active-concept {
+  .menu-concept .active-concept, .menu-concept .active-offer, .menu-offer .active-concept, .menu-offer .active-offer {
     background-color: #fff;
     border-top: 3px solid green !important;
     -webkit-box-shadow: 2px -1px 1px rgba(0, 0, 0, 0.08), -2px -1px 1px rgba(0, 0, 0, 0.08);
@@ -2902,7 +2905,7 @@ input {
   -moz-transition: width .25s ease-out,height .25s ease-out;
   transition: width .25s ease-out,height .25s ease-out; }
 
-.concept-content-box {
+.concept-content-box, .offer-content-box {
   border-bottom: 1px solid #e6e6e6; }
 
 .offer-content-space-owner, .concept-content-space-owner {
@@ -3076,7 +3079,8 @@ input {
   text-align: center; }
 
 #customer-auction {
-  width: 100%; }
+  max-width: 900px;
+  margin: 0 auto; }
   #customer-auction img {
     width: 100%;
     height: 100%; }
@@ -3100,6 +3104,174 @@ input {
     margin: 0; }
   #customer-auction .auction-upload-image {
     min-height: 150px; }
+
+.offer-cancel {
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #333;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1111; }
+  .offer-cancel i::before {
+    color: white; }
+
+.offer-order {
+  max-height: 250px;
+  height: 100%;
+  overflow-y: auto;
+  margin: 15px; }
+
+.box-list-order-hover {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease; }
+  .box-list-order-hover:hover {
+    -webkit-box-shadow: 0 0 6px 2px #ccc;
+    -moz-box-shadow: 0 0 6px 2px #ccc;
+    box-shadow: 0 0 6px 2px #ccc;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease; }
+
+.box-list-order {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.img-list img {
+  width: 100%;
+  max-width: 100px;
+  height: 80px; }
+
+.title-list {
+  padding: 0 15px; }
+  .title-list img {
+    width: 100px;
+    display: block; }
+
+.btn-auction button {
+  outline: none;
+  padding: 5px 10px;
+  background-color: #888;
+  color: white; }
+
+#popup-dongnhan .bg-popup,
+#popup-furnist .bg-popup,
+#popup-relax .bg-popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1111; }
+
+#popup-dongnhan .popup-control,
+#popup-furnist .popup-control,
+#popup-relax .popup-control {
+  background-color: #fff;
+  width: 450px;
+  max-height: 350px;
+  height: 100%;
+  overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 3333; }
+
+#popup-dongnhan .custom-img img,
+#popup-furnist .custom-img img,
+#popup-relax .custom-img img {
+  max-width: 200px;
+  height: 150px;
+  width: 100%; }
+
+#popup-dongnhan .title-list,
+#popup-furnist .title-list,
+#popup-relax .title-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+#popup-dongnhan .img-order-custom img,
+#popup-furnist .img-order-custom img,
+#popup-relax .img-order-custom img {
+  width: 160px; }
+
+#popup-dongnhan .price,
+#popup-furnist .price,
+#popup-relax .price {
+  margin-top: 10px; }
+
+#popup-dongnhan .describe,
+#popup-furnist .describe,
+#popup-relax .describe {
+  padding: 10px 0; }
+  #popup-dongnhan .describe h5,
+  #popup-furnist .describe h5,
+  #popup-relax .describe h5 {
+    color: green;
+    font-size: 18px; }
+
+#popup-dongnhan .btn-group-control,
+#popup-furnist .btn-group-control,
+#popup-relax .btn-group-control {
+  margin-top: 30px;
+  text-align: center; }
+
+#popup-dongnhan .btn-cancel-popup,
+#popup-furnist .btn-cancel-popup,
+#popup-relax .btn-cancel-popup {
+  padding: 5px 10px;
+  background-color: #b62c2c;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  cursor: pointer; }
 
 .header-offer .wrapper-header {
   padding: 5px 15px;
@@ -3286,8 +3458,8 @@ input {
 .btn-show-list-details {
   position: fixed;
   display: none;
-  right: 15px;
-  top: 15px; }
+  right: 5px;
+  top: 5px; }
   .btn-show-list-details #show-list-details {
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -3308,19 +3480,6 @@ input {
 .customer-title h2 {
   font-size: 18px; }
 
-@media only screen and (max-width: 992px) {
-  .offer-content-list-supplier {
-    position: absolute;
-    right: 0;
-    display: none; }
-  .show-list-details {
-    display: block !important; }
-  .offer-content-customer {
-    width: 100%; }
-  .btn-show-list-details {
-    position: absolute;
-    display: block; } }
-
 .bg-wrapper-popup {
   z-index: 13 !important; }
 
@@ -3338,7 +3497,9 @@ input {
   border-bottom: 1px solid #e8e8e8; }
 
 .wrapper-offer-supplier {
-  border-left: 1px solid #ccc; }
+  border-left: 1px solid #ccc;
+  height: 100vh;
+  overflow-y: auto; }
 
 .btn-cancel {
   background: #ff2424;
@@ -3350,6 +3511,156 @@ input {
 
 .auction-upload-image .images img {
   max-height: 500px; }
+
+.menu-offer {
+  overflow: hidden;
+  width: 419px;
+  z-index: 1; }
+
+.wrapper-offer-supplier a {
+  color: #333; }
+
+.img_logo_offer {
+  padding: 3px;
+  max-height: 35px;
+  min-height: 35px;
+  -webkit-box-shadow: 0 0 2px 0 #a09f9f;
+  -moz-box-shadow: 0 0 2px 0 #a09f9f;
+  box-shadow: 0 0 2px 0 #a09f9f;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease; }
+  .img_logo_offer img {
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease; }
+  .img_logo_offer:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease; }
+
+.info-offer {
+  height: 200px; }
+  .info-offer .title {
+    padding: 10px; }
+
+.bg-white {
+  background-color: #fff; }
+
+.more-product-offer {
+  left: 0 !important;
+  position: relative !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+  -moz-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: justify !important;
+  -webkit-justify-content: space-between !important;
+  -moz-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.product-offer {
+  width: -webkit-calc(100% - 420px) !important;
+  width: -moz-calc(100% - 420px) !important;
+  width: calc(100% - 420px) !important; }
+  .product-offer .carousel-product {
+    height: -webkit-calc(100vh - 200px) !important;
+    height: -moz-calc(100vh - 200px) !important;
+    height: calc(100vh - 200px) !important; }
+  .product-offer .list-items-offer {
+    width: 100% !important; }
+  .product-offer .shop-more {
+    position: relative !important;
+    width: 100%;
+    max-width: 100% !important;
+    top: 0 !important;
+    left: 0 !important; }
+
+@media only screen and (max-width: 991px) {
+  .product-offer {
+    width: 100% !important; } }
+
+.btn-close-menu-offer {
+  position: absolute;
+  background: #26c31c;
+  top: 16px;
+  left: -48px;
+  color: #fff;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: 2;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  display: none; }
+
+@media only screen and (max-width: 991px) {
+  .offer-content-list-supplier {
+    position: absolute;
+    right: 0;
+    display: none; }
+  .btn-close-menu-offer {
+    display: block !important; }
+  .show-list-details {
+    display: block !important; }
+  .offer-content-customer {
+    width: 100%; }
+  .btn-show-list-details {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #66666694; }
+    .btn-show-list-details i {
+      color: #fff; } }
 
 .title-introduce h3 {
   padding: 20px 0 15px; }
