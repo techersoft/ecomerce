@@ -1,8 +1,7 @@
 .concept-layout{
     display: flex;
 }
-
-.menu-concept{
+.menu-concept,.menu-offer{
     position: fixed;
     right: 0;
     width: 420px;
@@ -66,7 +65,7 @@
             }
         }
     }
-    .active-concept{
+    .active-concept,.active-offer{
         background-color: #fff;
         border-top: 3px solid green !important;
         box-shadow: 2px -1px 1px rgba(0,0,0,0.08), -2px -1px 1px rgba(0,0,0,0.08);
@@ -94,7 +93,7 @@
     -webkit-transition: width .25s ease-out,height .25s ease-out;
     transition: width .25s ease-out,height .25s ease-out;
 }
-.concept-content-box{
+.concept-content-box,.offer-content-box{
     border-bottom: 1px solid #e6e6e6;
 }
 .offer-content-space-owner,.concept-content-space-owner{

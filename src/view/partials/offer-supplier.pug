@@ -1,61 +1,93 @@
 include datafake.pug
 .wrapper-offer-supplier
-    .offer-supplier_header.p-3
-        .offer-content-space-owner
-            .offer-content-space-owner_info-avatar
-                a(href="#")
-                    img(src="https://st.hzcdn.com/simgs/ee53d18f01071ab1_1-0081/_.jpg")
-            .offer-content-space-owner_info-details.ml-3
-                .space-owner_info-details_name
-                    a(href="#" style="font-weight:600") Trung Hiếu
-                .space-owner_info-details_info
-                    a(href="#" style="font-weight:600") Cập nhật thông tin
-
-    .offer-supplier_header-title.d-flex.text-center.px-3.py-2
-        <i class="fas fa-th-list"></i>
-        h2.ml-2 Danh sách nhà cung cấp
-    .offer-supplier_list-content
-        each item in listOfferSupplierItem
-            .offer_list_item.px-3.py-2
-                .box-list_info
-                    .list_item_img
-                        img(src=item.imgInfo)
-                    .list_item_info
-                        .item_info(name="name")
-                            p Tên sản phẩm:
-                            span=item.name
-                        .item_info(name="price")
-                            p Giá :
-                            span=item.price
-                                sup đ
-                        .item_info
-                            a.supplier_logo(href="./store-homepage.html")
-                                img(src=item.logo)
-                .widget-see-details.text-right
-                    button.btn-see-details Xem chi tiết
-                    .details-supplier.text-left
-                        .details-supplier_title.p-3
-                            a.supplier_logo(href="./store-homepage.html")
-                                    img(src=item.logo)
-                            h2=item.nameSupplier
-                        .details-supplier-content.px-3.py-2
-                            .item_info
-                                p Tên sản phẩm:
-                                span.ml-1=item.name
-                            .item_info
-                                p Giá:
-                                span.ml-1=item.price
-                            .item_info
-                                p Số lượng đặt tối thiểu:
-                                span.ml-1=item.minQuantity
-                            .item_info
-                                p Thời gian giao hàng:
-                                span.ml-1
-                            .item_info
-                                p DH:
-                                span.ml-1
-                            .item_info
-                                p Mô tả chi tiết:
-                                span.ml-1
-                        button.btn-close-details-supplier ĐÓNG
-                            
+    .menu-offer
+        ul.left-menu
+            li
+                a.menu-offer-item.active-offer(href="#photo") <i class="fas fa-image"></i>
+            li
+                a.menu-offer-item(href="#tag") <i class="fas fa-tag"></i>
+            li
+                a.menu-offer-item(href="#question") <i class="fas fa-question-circle"></i>
+        ul.right-menu
+            li
+                a(href="#") 
+                    <i class="fas fa-shopping-cart"></i>
+                    span 0
+            li
+                a.close(href="./index.html") <i class="fas fa-times"></i>
+    .offer-content-box.p-3.pt-5
+        .offer-content-space-owner.mt-3  
+            .offer-content-space-owner_info-details
+                .space-info_title.mb-1
+                    h2
+                        span.space-title__line Giường nệm đa năng
+                        span.space-title__line.space-title__line-sub Dành cho các hộ gia đình
+                .space-owner_info-details_rating.d-flex
+                    .space-owner_info-details_rating_icon
+                        span.fa.fa-star.checked
+                        span.fa.fa-star.checked
+                        span.fa.fa-star.checked
+                        span.fa.fa-star.checked
+                        span.fa.fa-star.checked
+                    span.ml-2(style="font-size:13px;line-height:23px") 4 Lượt xem
+    .offer-content-box.px-3.pt-3.pb-0
+        .offer-content-space-info
+            .space-facets
+                ul.space-facets_content
+                    li
+                        a(href="#").text-green Contemporary
+                    li
+                        a(href="#").text-green Auckland
+                    li
+                        a(href="#").text-green Website
+                            span.more-icon
+            .space-description.mb-5
+                p Mike Hollman
+            .offer-project-photo#photo
+                .concept_title
+                    h2 Thương hiệu tương tự
+                        //- a(href="#").text-green.ml-1 Albany Four
+                    .project-photo_img.my-2
+                        .row.m-0
+                            each item in listImgLogoOffer
+                                .box-img.px-1.mb-2.grid-reponsive-custom
+                                    a(href="./concept.html")
+                                        .img_responsive.img_logo_offer
+                                            img(src=item)
+    //- .offer-content-box.px-3.pt-3
+    //-     .offer-content-recommendations-spaces
+    //-         .concept_title
+    //-             h2 Ý tưởng tương tự 
+    //-         .recommendations-spaces_photo
+    //-             .recommendations-spaces_photo_img.my-2
+    //-                 .row.m-0
+    //-                     each item in listImgConcept
+    //-                         .box-img.px-1.mb-2.grid-reponsive-custom
+    //-                             a(href="./concept.html")
+    //-                                 .img_responsive
+    //-                                     img(src=item)
+    .offer-content-box.px-3.pt-3
+        .offer-content-space-rel-prod#tag
+            .concept_title
+                h2 Sản phẩm liên quan
+            .space-rel-prod_photo
+                .space-rel-prod_photo_img.my-2
+                    .row.m-0
+                        each item in listImgConceptProduct
+                            .box-img.px-1.mb-2.col-3
+                                a(href=item.href)
+                                    .img_responsive
+                                        img(src=item.src)
+                                    .space-price.text-center.d-block
+                                        span=item.price
+    .offer-content-box.px-3.pt-3
+        .offer-content-comment-question#question
+            .concept_title
+                h2 Câu hỏi về bức ảnh này (25)
+            .comment-question.my-3
+                .btn-cmt-quest
+                    button.btn_cmt-quest Hỏi Đáp
+                .notification-cmt-quest.my-1
+                    span Có bất kì câu hỏi nào về ảnh? Nhắn tin hỏi tại đây.
+    .btn-close-menu-offer
+        span Đóng
