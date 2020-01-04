@@ -4,7 +4,7 @@ block main-content
         section#header
             include ./../partials/header.pug
             include ./../partials/navigation.pug
-        main#main-content
+        main#main-content.bg-deepgrey
             .container-fluid.mt-3
                 .store-product-menu.my-3
                     .store-product-menu_content
@@ -16,7 +16,7 @@ block main-content
                             li
                                 a(href="./about-us.html") Giới thiệu
                 include ./../partials/store-homepage.pug
-                .product-list.px-3
+                .product-list
                     .product-list-title.d-flex.justify-content-between.align-items-center.mb-2
                         h3 Sản phẩm nổi bật
                         a.read-more(href="#") Xem thêm 

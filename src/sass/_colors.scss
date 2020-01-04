@@ -14,10 +14,12 @@ $text-colors: map-merge((
 }
 
 // BACKGROUNDs
+$deepgrey : #f4f4f4;
 
 $bg-color: () !default;
 $bg-color: map-merge((
-    "bg-green": lighten($blue,10%)
+    "bg-green": lighten($blue,10%),
+    "bg-deepgrey": $deepgrey
 ), $bg-color);
 
 @each $name,$color in $bg-color{
