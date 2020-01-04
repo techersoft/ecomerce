@@ -2195,10 +2195,6 @@ input {
 
 .product-item {
   position: relative;
-  border-right: 1px solid #e0e0e0;
-  -webkit-box-shadow: 0 0 6px rgba(193, 193, 193, 0.62);
-  -moz-box-shadow: 0 0 6px rgba(193, 193, 193, 0.62);
-  box-shadow: 0 0 6px rgba(193, 193, 193, 0.62);
   overflow: hidden; }
   .product-item .cursor-pointer {
     cursor: pointer; }
@@ -2639,7 +2635,8 @@ input {
 .homepage-container .hot-product-containe {
   margin-bottom: 20px !important;
   background-color: #eaeaea;
-  padding: 10px 0; }
+  padding: 10px 0;
+  background-color: #c4c4c4; }
   .homepage-container .hot-product-containe .sale-advertisment .sale-content .sale-product:first-child .content {
     margin-left: 10px;
     margin-right: 5px; }
