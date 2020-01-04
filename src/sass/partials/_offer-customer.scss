@@ -35,3 +35,131 @@
         min-height: 150px;
     }
 }
+
+.offer-cancel{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1111;
+    i{
+        &::before{
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+.offer-order{
+    max-height: 250px;
+    height: 100%;
+    overflow-y: auto;
+    margin: 15px;
+    
+}
+
+.box-list-order-hover{
+    transition: all .3s ease;
+    &:hover{
+        box-shadow: 0 0 6px 2px #ccc;
+        transition: all .3s ease;
+    }
+}
+.box-list-order{
+    display: flex;
+}
+.img-list{
+    img{
+        width: 100%;
+        max-width: 100px;
+        height: 80px;
+    }
+    
+}
+.title-list{
+    padding: 0 15px;
+    img{
+        width: 100px;
+        display: block;
+    }
+}
+
+.btn-auction{
+    button{
+        outline: none;
+        padding: 5px 10px;
+        background-color: #888;
+        color: white;
+    }
+}
+
+#popup-dongnhan,
+#popup-furnist,
+#popup-relax{
+    .bg-popup{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.4);
+        z-index: 1111;
+    }
+    .popup-control{
+        background-color: #fff;
+        width: 450px;
+        max-height: 350px;
+        height: 100%;
+        overflow-y: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        border-radius: 3px;
+        z-index: 3333;
+    }
+    .custom-img{
+        img{
+            max-width: 200px;
+            height: 150px;
+            width: 100%;
+        }
+    }
+    .title-list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .img-order-custom{
+        img{
+            width: 160px;
+        }
+    }
+    .price{
+        margin-top: 10px;
+    }
+    .describe{
+        padding: 10px 0;
+        h5{
+            color: green;
+            font-size: 18px;
+        }
+    }
+    .btn-group-control{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .btn-cancel-popup{
+        padding: 5px 10px;
+        background-color: rgb(182, 44, 44);
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        cursor: pointer;
+    }
+}

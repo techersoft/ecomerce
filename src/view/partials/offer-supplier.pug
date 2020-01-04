@@ -1,71 +1,36 @@
 include datafake.pug
 .wrapper-offer-supplier
-    .menu-offer
-        ul.left-menu
-            li
-                a.menu-offer-item.active-offer(href="#photo") <i class="fas fa-image"></i>
-            li
-                a.menu-offer-item(href="#tag") <i class="fas fa-tag"></i>
-            li
-                a.menu-offer-item(href="#question") <i class="fas fa-question-circle"></i>
-        ul.right-menu
-            li
-                a(href="#") 
-                    <i class="fas fa-shopping-cart"></i>
-                    span 0
-            li
-                a.close(href="./index.html") <i class="fas fa-times"></i>
-    .offer-content-box.p-3.pt-5
-        .offer-content-space-owner.mt-3  
-            .offer-content-space-owner_info-details
-                .space-info_title.mb-1
-                    h2
-                        span.space-title__line Giường nệm đa năng
-                        span.space-title__line.space-title__line-sub Dành cho các hộ gia đình
-                .space-owner_info-details_rating.d-flex
-                    .space-owner_info-details_rating_icon
-                        span.fa.fa-star.checked
-                        span.fa.fa-star.checked
-                        span.fa.fa-star.checked
-                        span.fa.fa-star.checked
-                        span.fa.fa-star.checked
-                    span.ml-2(style="font-size:13px;line-height:23px") 4 Lượt xem
-    .offer-content-box.px-3.pt-3.pb-0
-        .offer-content-space-info
-            .space-facets
-                ul.space-facets_content
-                    li
-                        a(href="#").text-green Contemporary
-                    li
-                        a(href="#").text-green Auckland
-                    li
-                        a(href="#").text-green Website
-                            span.more-icon
-            .space-description.mb-5
-                p Mike Hollman
-            .offer-project-photo#photo
-                .concept_title
-                    h2 Thương hiệu tương tự
-                        //- a(href="#").text-green.ml-1 Albany Four
-                    .project-photo_img.my-2
-                        .row.m-0
-                            each item in listImgLogoOffer
-                                .box-img.px-1.mb-2.grid-reponsive-custom
-                                    a(href="./concept.html")
-                                        .img_responsive.img_logo_offer
-                                            img(src=item)
-    //- .offer-content-box.px-3.pt-3
-    //-     .offer-content-recommendations-spaces
-    //-         .concept_title
-    //-             h2 Ý tưởng tương tự 
-    //-         .recommendations-spaces_photo
-    //-             .recommendations-spaces_photo_img.my-2
-    //-                 .row.m-0
-    //-                     each item in listImgConcept
-    //-                         .box-img.px-1.mb-2.grid-reponsive-custom
-    //-                             a(href="./concept.html")
-    //-                                 .img_responsive
-    //-                                     img(src=item)
+    .offer-content-box.p-2.position-relative
+        h3 Danh sách nhà cung cấp
+        .offer-cancel
+            a.close(href="./index.html") <i class="fas fa-home"></i>
+    .btn-auction.px-3.pt-3.text-right
+        button Đấu giá
+    .offer-content-box.px-3.pt-3.pb-0.offer-order
+        .box-list-order.box-list-order-hover#btn-popup-dongnhan
+            .img-list
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png", alt="")
+                .price
+                    span Giá : #[span 9,500,000 đ]
+        .box-list-order.my-2.box-list-order-hover#btn-popup-relax
+            .img-list
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/10/25/relax-art-1571993027.png", alt="")
+                .price
+                    span Giá : #[span 9,500,000 đ]
+        .box-list-order.my-2.box-list-order-hover#btn-popup-furnist
+            .img-list
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png", alt="")
+                .price
+                    span Giá : #[span 9,500,000 đ]
     .offer-content-box.px-3.pt-3
         .offer-content-space-rel-prod#tag
             .concept_title
@@ -91,3 +56,66 @@ include datafake.pug
                     span Có bất kì câu hỏi nào về ảnh? Nhắn tin hỏi tại đây.
     .btn-close-menu-offer
         span Đóng
+
+
+#popup-dongnhan.d-none
+    .bg-popup
+    .popup-control
+        .btn-cancel-popup#btn-cancel-popup-dongnhan X
+        .box-list-order
+            .img-list.custom-img
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order.img-order-custom
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/11/01/dong-nhan-1572594837.png", alt="")
+                .price.ml-1
+                    span Giá : #[span 9,500,000 đ]
+        .describe
+            h5 Mô tả : 
+            span Phòng ngủ cao cấp đầy đủ tiện nghi, với cách trang trí hiện đại phù hợp với những người khó ngủ.
+        .btn-group-control
+            button.btn-deal.btn.btn-success Deal
+            button.btn-call.btn.btn-primary Call
+            button.btn-chat.btn.btn-dark Chat
+    
+
+#popup-relax.d-none
+    .bg-popup
+    .popup-control
+        .btn-cancel-popup#btn-cancel-popup-relax X
+        .box-list-order
+            .img-list.custom-img
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order.img-order-custom
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/10/25/relax-art-1571993027.png", alt="")
+                .price.ml-1
+                    span Giá : #[span 9,500,000 đ]
+        .describe
+            h5 Mô tả : 
+            span Phòng ngủ cao cấp đầy đủ tiện nghi, với cách trang trí hiện đại phù hợp với những người khó ngủ.
+        .btn-group-control
+            button.btn-deal.btn.btn-success Deal
+            button.btn-call.btn.btn-primary Call
+            button.btn-chat.btn.btn-dark Chat
+
+
+#popup-furnist.d-none
+    .bg-popup
+    .popup-control
+        .btn-cancel-popup#btn-cancel-popup-furnist X
+        .box-list-order
+            .img-list.custom-img
+                img(src="https://st.hzcdn.com/simgs/82b12df704bd4c8a_9-8533/contemporary-bedroom.jpg", alt="")
+            .title-list
+                a(href="#").img-order.img-order-custom
+                    img(src="https://cdn.fitin.vn/cms-ecom/images/2019/12/04/furnist-1575456016.png", alt="")
+                .price.ml-1
+                    span Giá : #[span 9,500,000 đ]
+        .describe
+            h5 Mô tả : 
+            span Phòng ngủ cao cấp đầy đủ tiện nghi, với cách trang trí hiện đại phù hợp với những người khó ngủ.
+        .btn-group-control
+            button.btn-deal.btn.btn-success Deal
+            button.btn-call.btn.btn-primary Call
+            button.btn-chat.btn.btn-dark Chat

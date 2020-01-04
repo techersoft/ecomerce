@@ -239,6 +239,17 @@
         }
     }
 }
+
+.info-offer{
+    height: 200px;
+    .title{
+        padding: 10px;
+    }
+}
+.bg-white{
+    background-color: #fff;
+}
+
 .more-product-offer{
     left: 0 !important;
     position: relative !important;
@@ -252,7 +263,7 @@
 .product-offer{
     width: calc(100% - 420px) !important;
     .carousel-product{
-        height: calc(100vh - 150px) !important;
+        height: calc(100vh - 200px) !important;
     }
     .list-items-offer{
         width: 100% !important;

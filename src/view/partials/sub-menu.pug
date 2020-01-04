@@ -13,7 +13,7 @@ include ./datafake.pug
             each item in listSubMenu
                 .nav-box.px-3.py-2
                     li.menu-accordion__item.d-flex.align-items-center
-                        a(href="../html/offer-product.html")
+                        a(href=item.href)
                             h6.m-0.menu-accordion__title=item.title
                             //- <i class="fas fa-angle-down ml-2 icon-sub-menu"></i>
                     //- ul.menu-accordion__sub-items
