@@ -17,7 +17,7 @@
         }
     }
     .sidebar-menu{
-        border: 1px solid rgba(8,21,38,.15);
+        background-color: white;
         .menu-item{
             padding: 3px 0;
             span{
@@ -89,6 +89,7 @@
         }
     }
     .filter-menu{
+        background-color: white;
         .checkbox{
             margin-bottom: 0 !important;
             padding: 7px 0;
