@@ -18,8 +18,34 @@
             text-decoration: none;
             text-align: center;
             transition: box-shadow 0.5s ease-in-out;
-            img {
-                width: 70px;
+            position: relative;
+            &:hover{
+                .main-img{
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: all .1s ease;
+                }
+                .sub-img{
+                    opacity: 1;
+                    pointer-events: auto;
+                    transition: all .1s ease;
+                }       
+            }
+            .main-img{
+                width: 60px;
+                padding-top: 10px;
+                
+            }
+            .sub-img{
+                position: absolute;
+                width: 60px;
+                height: auto;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 0;
+                pointer-events: none;
+                transition: all .1s ease;
             }
             p {
                 font-size: 12px;
