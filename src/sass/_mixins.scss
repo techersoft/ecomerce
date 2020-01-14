@@ -129,49 +129,7 @@
       .product-prop {
         padding: 8px 0;
   
-        .amount-box {
-          border: 1px solid #aeaeae;
-          border-radius: 3px;
-          display: inline-block;
-  
-          button, input {
-            display: inline-block;
-            height: 100%;
-            color: #bec0c2;
-            border: none;
-            outline: none;
-            background: transparent;
-            max-width: 40px;
-          }
-          button {
-            padding: 0px 15px;
-            font-size: 23px;
-          }
-          
-          input {
-            text-align: center;
-           
-            padding: 5px;
-          }
-          span:not(.amount-number) {
-            cursor: pointer;
-          }
-          .amount-number {
-            color: inherit;
-          }
-        }
-        button.add-to-cart {
-          color: #fff;
-          background: #070404;
-          padding: 5px 25px;
-          border: 1px solid #070404;
-          outline: none;
-  
-          &:hover {
-            color: #070404;
-            background: #fff;
-          }
-        }
+        
       }
       .prop-title {
         display: inline-block;
@@ -291,7 +249,49 @@
 //  Product detail
 
 // button loadmore
+.amount-box {
+  border: 1px solid #aeaeae;
+  border-radius: 3px;
+  display: inline-block;
 
+  button, input {
+    display: inline-block;
+    height: 100%;
+    color: #bec0c2;
+    border: none;
+    outline: none;
+    background: transparent;
+    max-width: 40px;
+  }
+  button {
+    padding: 0px 15px;
+    font-size: 23px;
+  }
+  
+  input {
+    text-align: center;
+   
+    padding: 5px;
+  }
+  span:not(.amount-number) {
+    cursor: pointer;
+  }
+  .amount-number {
+    color: inherit;
+  }
+}
+button.add-to-cart {
+  color: #fff;
+  background: #070404;
+  padding: 5px 25px;
+  border: 1px solid #070404;
+  outline: none;
+
+  &:hover {
+    color: #070404;
+    background: #fff;
+  }
+}
 .load-more{
   text-align: center;
   margin: 15px 0;

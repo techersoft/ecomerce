@@ -55,11 +55,11 @@ $(document).ready(function () {
     // Handle Count Amount Props
     $('.handle-amount').on('click', function (e) {
         var $this = $(this);
-        var oldVal = $('.amount-number').val();
+        var oldVal = $this.siblings('.amount-number').val();
         var newVal;
 
         newVal = $this.data('multi') == '1' ? parseInt(oldVal) + 1 : (+oldVal >= 2) ? parseInt(oldVal) - 1 : oldVal;
-        $('.amount-number').val(newVal);
+        $this.siblings('.amount-number').val(newVal);
     })
 
     // Carousel Product Detail

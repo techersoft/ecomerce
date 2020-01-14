@@ -1,10 +1,13 @@
 $blue: blue;
-
+$red: red;
+$white : white;
 // TEXTs
 
 $text-colors: () !default;
 $text-colors: map-merge((
-    "text-blue": $blue
+    "text-blue": $blue,
+    "text-red": $red,
+    "text-white": $white
 ) , $text-colors);
 
 @each $name,$color in $text-colors{
