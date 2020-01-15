@@ -68,6 +68,12 @@ $(document).ready(function () {
       $('.op-menu').removeClass('clo-menu');
       $('.offer-content-list-supplier').removeClass('show-list-details');
     }
+  });
+  $(window).click(function (e) {
+    if (event.target.className == "bg-wrapper-tras show-bg-wrapper-tras") {
+      $('.shopping-card_list.show-card-list').removeClass('show-card-list');
+      $(".bg-wrapper-tras").removeClass("show-bg-wrapper-tras");
+    }
   }); // Hidden and Show Menu when to scroll up
 
   var fixMenu = $('#header').offset().top;
