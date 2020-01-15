@@ -1,3 +1,5 @@
+include ./datafake.pug
+.bg-wrapper-tras
 .w-100.wrapper-header
     .header-content
         .row.align-items-center
@@ -26,9 +28,29 @@
                                     <i class="fas fa-heart"></i>
                                     span Yêu thích (0)
                             li.shopping-card
-                                a(href="https://techersoft.github.io/ecomerce/dist/html/cart.html")
+                                p.shopping-card_icon
                                     <i class="fas fa-cart-plus"></i>
-                                    span.text-shopping.text-red 5
+                                    span.text-shopping 4
+                                .shopping-card_list
+                                    .shopping-card_list_title
+                                        h2.text-center Danh sách giỏ hàng
+                                    .shopping-card_list_product
+                                        each item in listOfferSupplierItem
+                                            .shopping-card_list_product-item
+                                                .shopping-card_list_product-item-left
+                                                    .shopping-card_list_product-item_img
+                                                        img(src=item.imgInfo)
+                                                    .shopping-card_list_product-item_quatity.px-2
+                                                        p 1
+                                                .shopping-card_list_product-item-right.px-3
+                                                    .shopping-card_list_product-item_info
+                                                        .shopping-card_list_product-item_info_name
+                                                            a(href="#")=item.name
+                                                        .shopping-card_list_product-item_info_price
+                                                            span=item.price
+                                    .shopping-card_list_btn
+                                        a(href="https://techersoft.github.io/ecomerce/dist/html/cart.html")
+                                            button Xem chi tiết
                             li.sign-in
                                 a(href="#")
                                     i.fas.fa-user 

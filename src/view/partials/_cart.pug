@@ -1,11 +1,11 @@
 include datafake.pug
-.wrapper_cart.px-3
+.wrapper_cart.container-fluid.px-3
     .title_cart
         h2 Giỏ Hàng
             span.pl-2='(Có '+ listOfferSupplierItem.length +' sản phẩm)'
     .content_cart
         .row
-            .col-lg-8.col-xl-9
+            .col-lg-8.col-xl-9.mt-3
                 each item in listOfferSupplierItem
                     .product-item_cart
                         .box-item_cart
