@@ -4268,6 +4268,46 @@ input {
       padding: 10px 0;
       font-weight: 500; }
 
+#apartment .info-apartment {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #333; }
+  #apartment .info-apartment i {
+    margin-right: 5px; }
+
+#apartment .img-apartment {
+  width: 100%;
+  display: block;
+  max-height: 240px; }
+
+.title-info-apartment,
+.location-more {
+  color: black; }
+
+.title-info-apartment h3 {
+  text-align: center;
+  padding: 10px 0; }
+
+.location-more {
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .location-more i {
+    font-size: 30px; }
+    .location-more i::before {
+      color: orange; }
+  .location-more span {
+    margin-left: 12px;
+    font-size: 16px; }
+
 #draw .img-ground {
   padding-top: 20px; }
   #draw .img-ground img {

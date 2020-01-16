@@ -66,3 +66,45 @@
         }
     }
 }
+#apartment{
+    .info-apartment{
+        margin-top: 5px;
+        font-size: 18px;
+        color: #333;
+        i{
+            margin-right: 5px;
+        }
+    }
+    .img-apartment{
+        width: 100%;
+        display: block;
+        max-height: 240px;
+    }
+    
+}
+.title-info-apartment,
+.location-more{
+    color: black;
+}
+.title-info-apartment{
+    h3{
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+.location-more{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    i{
+        font-size: 30px;
+        &::before{
+            color: orange;
+        }
+        
+    }
+    span{
+        margin-left: 12px;
+        font-size: 16px;
+    }
+}
