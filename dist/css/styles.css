@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=K2D:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:400,500,600,700&display=swap");
 html {
   font-size: 16px; }
 
@@ -14,7 +14,7 @@ td,
 th,
 input,
 button {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
   line-height: 1.5;
   font-weight: 300;
   font-size: 1rem;
